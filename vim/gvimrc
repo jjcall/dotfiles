@@ -1,0 +1,14 @@
+if has("gui_macvim")
+  set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+  set guioptions-=T " no toolbar set guioptions-=m " no menus
+  set guioptions-=r " no scrollbar on the right
+  set guioptions-=R " no scrollbar on the right
+  set guioptions-=l " no scrollbar on the left
+  set guioptions-=b " no scrollbar on the bottom
+else
+  set guifont=DejaVu\ Sans\ Mono\ 14
+endif
+
+set guioptions=-t
+
+set noeb vb t_vb=

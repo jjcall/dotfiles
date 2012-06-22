@@ -1,0 +1,5 @@
+--type-set=less=.less
+--type-set=coffeescript=.coffee
+--type-set=clojure=.clj
+--type-set=po=.po
+--type-set=javascript=.js

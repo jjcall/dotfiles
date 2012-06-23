@@ -53,6 +53,7 @@ set backspace=indent,eol,start
 " Use solarized
 set background=dark
 colorscheme solarized
+set enc=utf-8 gfn=Bitstream\ Vera\ Sans\ Mono:h14
 
 " Hit jj to exit insert mode
 imap jj <Esc>

@@ -29,26 +29,27 @@ ZSH_THEME="murilasso"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django)
+plugins=(git rails django)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/share/python:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/x11/bin
+PATH=/usr/local/bin:/usr/local/share/python:$PATH
+export PATH
 export NODE_PATH=/usr/local/lib/node_modules
 
-# Virtualenvs
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
+# VirtualEnv
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/share/python/virtualenvwrapper.sh
 
-alias cd_senzari="cd ~/Projects/Senzari/src/senzari && source ../../cfg/senzari/bin/activate"
-alias cd_formbit="cd ~/Projects/formbit-web && workon formbit"
-alias cd_sites="cd ~/Sites"
-alias cd_themes="cd ~/Sites/themes"
-alias pear="php /usr/lib/php/pear/pearcmd.php"
+# PHP Crap
+alias pear="php /usr/lib/php/pear/pearcmd.php" 
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
+
+alias cd_senzari="cd ~/Projects/Senzari/src/senzari && source ../../cfg/senzari/bin/activate"
 
 # Alias to my linode box
 alias squarebox="ssh root@173.255.225.126"
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

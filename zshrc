@@ -10,6 +10,7 @@ ZSH_THEME="murilasso"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias e="subl"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -43,7 +44,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/share/python/virtualenvwrapper.sh
 
 # PHP Crap
-alias pear="php /usr/lib/php/pear/pearcmd.php" 
+alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 alias cd_senzari="cd ~/Projects/Senzari/src/senzari && source ../../cfg/senzari/bin/activate"

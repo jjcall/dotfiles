@@ -52,3 +52,5 @@
 
 [github]
   user = alikins
+[core]
+	editor = subl -w

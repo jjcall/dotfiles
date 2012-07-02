@@ -50,6 +50,11 @@ endif
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Remove MacVim Toolbar
+if has("gui_running")
+  set guioptions=egmrt
+endif
+
 " Use solarized
 set background=dark
 colorscheme solarized

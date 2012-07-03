@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="murilasso"
+ZSH_THEME="dogenpunk"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -40,12 +40,9 @@ export PATH
 export NODE_PATH=/usr/local/lib/node_modules
 
 # VirtualEnv
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/share/python/virtualenvwrapper.sh
-
-# PHP Crap
-alias pear="php /usr/lib/php/pear/pearcmd.php"
-alias pecl="php /usr/lib/php/pear/peclcmd.php"
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
 alias cd_senzari="cd ~/Projects/Senzari/src/senzari && source ../../cfg/senzari/bin/activate"
 

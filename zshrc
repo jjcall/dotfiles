@@ -10,7 +10,7 @@ ZSH_THEME="mh"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e="subl"
+alias e="subl -w"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

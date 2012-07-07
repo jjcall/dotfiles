@@ -50,6 +50,10 @@ endif
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Snips
+au BufRead *.php set ft=php.html
+au BufNewFile *.php set ft=php.html
+
 " Remove MacVim Toolbar
 if has("gui_running")
   set guioptions=egmrt

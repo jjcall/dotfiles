@@ -10,7 +10,7 @@ ZSH_THEME="jjcall"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e="subl -w"
+alias e="mvim" 
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -43,11 +43,13 @@ export NODE_PATH=/usr/local/lib/node_modules
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/share/python/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
 
-alias cd_senzari="cd ~/Projects/Senzari/src/senzari && source ../../cfg/senzari/bin/activate"
+alias cd_senzari="cd ~/Projects/Senzari/src/senzari"
 
 # Alias to my linode box
 alias squarebox="ssh root@173.255.225.126"
+alias lifepointbox="ssh jjcall@66.175.212.130"
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

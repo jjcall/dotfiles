@@ -33,6 +33,7 @@ alias e="mvim"
 plugins=(git rails django)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 
 # Customize to your needs...
 PATH=/usr/local/bin:/usr/local/share/python:$PATH
@@ -44,12 +45,3 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/share/python/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
-
-alias cd_senzari="cd ~/Projects/Senzari/src/senzari"
-
-# Alias to my linode box
-alias squarebox="ssh root@173.255.225.126"
-alias lifepointbox="ssh jjcall@66.175.212.130"
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

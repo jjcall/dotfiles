@@ -1,1 +1,2 @@
-# Add your aliases here
+alias squarebox="ssh jjcall@173.255.225.126"
+alias lifepointbox="ssh jjcall@66.175.212.130"

@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="wezm"
+ZSH_THEME="dstufft"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,3 +45,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/share/python/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -1,16 +1,26 @@
 [user]
-  email = jason@jasoncalleiro.com 
-  name = Jason Calleiro 
+	name = jason Calleiro
+	email = jasoncalleiro@gmail.com
 
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  interactive = auto
   ui = auto
-
-[color]
   excludesfile = ~/.gitignore
+
+[color "branch"]
+  current = yellow black
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red reverse
+  new = green reverse
+  whitespace = white reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan reverse
+  branch = magenta
 
 [format]
   pretty = %Cblue%hCreset %Cgreen[%ar]%Creset (%an) %s
@@ -18,7 +28,6 @@
 [diff]
   tool = diffmerge
   suppressBlankEmpty = true
-
 
 [mergetool "diffmerge"]
   cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
@@ -30,27 +39,10 @@
 [branch]
   autosetupmerge = true
 
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
-
-[color "diff"]
-  meta = yellow bold
-  frag = magenta
-  plain = white bold
-  old = red bold
-  new = green bold
-  commit = yellow bold
-  func = green dim
-  #plain = white bold
-
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
-
 [github]
   user = alikins
+
 [core]
-	editor = subl -w
+  quotepath = false
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = mvim

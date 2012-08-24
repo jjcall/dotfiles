@@ -24,7 +24,9 @@ set incsearch " search as you type
 set hlsearch "highlight matches 
 set ignorecase " make searching case insensitive
 set smartcase " unless there is a uppercase character
-nnoremap <leader><space> :noh<cr>
+
+" Remove search highlight
+nnoremap <esc> :noh<return><esc>
 
 " space to invoke search
 :nmap <Space> /

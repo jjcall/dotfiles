@@ -1,5 +1,3 @@
-" Use Vim setting, rath than Vi settings
-set nocompatible
 
 " Start by having Pahthogen load any external bundles
 call pathogen#infect()
@@ -56,15 +54,16 @@ set backspace=indent,eol,start
 au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
 
-" Remove MacVim Toolbar
-if has("gui_running")
-  set guioptions=egmrt
-endif
 
 " Use solarized
+set t_Co=256
 set background=dark
+if !has('gui_running')
+  let g:solarized_termcolors=&t_Co
+  let g:solarized_termtrans=1
+endif
 colorscheme solarized
-set enc=utf-8 gfn=Bitstream\ Vera\ Sans\ Mono:h14
+
 
 " Hit jj to exit insert mode
 imap jj <Esc>

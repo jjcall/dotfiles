@@ -36,9 +36,8 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 
 # Customize to your needs...
-PATH=/usr/local/bin:/usr/local/share/python:$PATH
+PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/share/python:$PATH
 export PATH
-export NODE_PATH=/usr/local/lib/node_modules
 
 # VirtualEnv
 export WORKON_HOME=$HOME/.virtualenvs

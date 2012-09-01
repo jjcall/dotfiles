@@ -33,7 +33,6 @@ alias e="mvim"
 plugins=(git rails django)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.aliases
 
 # Customize to your needs...
 PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/share/python:$PATH

@@ -64,6 +64,6 @@
 [submodule "vim/bundle/jellybean"]
 	path = vim/bundle/jellybean
 	url = git://github.com/nanotech/jellybeans.vim.git
-[submodule "rbenv"]
-	path = rbenv
-	url = git://github.com/sstephenson/rbenv.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git

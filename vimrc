@@ -1,6 +1,4 @@
 
-" Start by having Pahthogen load any external bundles
-call pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -62,7 +60,7 @@ if !has('gui_running')
   let g:solarized_termcolors=&t_Co
   let g:solarized_termtrans=1
 endif
-colorscheme solarized
+colorscheme Tomorrow-Night
 
 
 " Hit jj to exit insert mode

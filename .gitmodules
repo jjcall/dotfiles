@@ -67,3 +67,6 @@
 [submodule "vim/bundle/surround"]
 	path = vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/fetch"]
+	path = vim/bundle/fetch
+	url = git://github.com/mklabs/vim-fetch.git

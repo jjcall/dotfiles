@@ -1,6 +1,4 @@
-" What a funny comment character
-" .gvimrc
-" v 0.1
+
 " rev. 2009-03-18
 
 " Turn on line numbers
@@ -11,7 +9,7 @@ set guifont=Menlo:h14
 set transparency=0 " (opaque) 0-100 (transparent)
 set noimdisable
 
-colorscheme solarized " use solarized theme
+colorscheme Tomorrow-Night " use solarized theme
 
 " Turns on the tab bar always
 set showtabline=2

@@ -12,10 +12,19 @@ source ~/.vim/vundle.vim
 filetype plugin indent on
 
 " System (Mac - MacVim) Configs
-source ~/.vim/platform.vim
+source ~/.vim/platforms.vim
 
 " Vim configs
 source ~/.vim/config.vim
 
 " Bindings
 source ~/.vim/bindings.vim
+
+" Plugin configs
+source ~/.vim/plugin_configs.vim
+
+" Custom functions
+source ~/.vim/functions.vim
+
+" AutoCmd Stuff
+source ~/.vim/autocmds.vim

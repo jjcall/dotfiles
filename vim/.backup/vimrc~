@@ -11,7 +11,7 @@ source ~/.vim/vundle.vim
 " Automatically detect file types
 filetype plugin indent on
 
-" System (Mac - MacVim) Configs
+" System (Windows, Mac) Configs
 source ~/.vim/platform.vim
 
 " Vim configs

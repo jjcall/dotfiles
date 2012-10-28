@@ -15,12 +15,20 @@ Bundle 'gmarik/vundle'
 "------------------------------------------
 " Navigation
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 
 " UI
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Rykka/colorv.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 " Commands
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/fugitive'
+Bundle 'mileszs/ack.vim'
+Bundle 'gmarik/sudo-gui.vim'
 
 " Helpers
 

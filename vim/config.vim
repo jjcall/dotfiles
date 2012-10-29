@@ -5,8 +5,8 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-set background=dark
-colorscheme Tomorrow-Night
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid 
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

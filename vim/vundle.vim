@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Rykka/colorv.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'w0ng/vim-hybrid'
 
 " Commands
 Bundle 'scrooloose/nerdcommenter'

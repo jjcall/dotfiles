@@ -51,5 +51,6 @@ nnoremap <leader>, :e#<CR>
 
 " Underline the current line with '='
 nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
+
 " format the entire file
 nmap <leader>fef ggVG=

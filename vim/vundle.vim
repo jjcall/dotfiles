@@ -20,6 +20,7 @@ Bundle 'kien/ctrlp.vim'
 " UI
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'vim-scripts/taglist.vim'
 Bundle 'Rykka/colorv.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'

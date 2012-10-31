@@ -24,7 +24,6 @@ set ruler			" Ruler on
 set number			" Line numbers on
 set nowrap			" Line wrapping off
 set laststatus=2		" Always show the statusline
-set cmdheight=2			" Make the command area 2 lines high
 set noshowmode			" Powerline takes care of it
 set title			" Set the title of the window in term
 if exists('+colorcolumn')

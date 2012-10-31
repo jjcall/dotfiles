@@ -34,17 +34,15 @@ plugins=(git rails3 rbenv cloudapp)
 
 source $ZSH/oh-my-zsh.sh
 
+
 # Customize to your needs...
-PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/share/python:$PATH
-export PATH
+export PATH="$PATH:$HOME/.rbenv/bin"
 
 # VirtualEnv
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/share/python/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
+# export WORKON_HOME=$HOME/.virtualenvs
+# source /usr/local/share/python/virtualenvwrapper.sh
+# export PIP_VIRTUALENV_BASE=$WORKON_HOME
+# export PIP_RESPECT_VIRTUALENV=true
 
 #Rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-
+eval "$(rbenv init - zsh)"

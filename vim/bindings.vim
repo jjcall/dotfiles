@@ -40,12 +40,22 @@ map <silent><Leader>/ :nohls<CR>
 " Highlight search word under cursor without jumping to next
 nnoremap <leader>h *<C-o>
 
+" Hit jj to exit insert mode
+imap jj <Esc>
+
+" Open a vertical/horizontal split, switch over to it
+nnoremap <leader>s <C-w>s<C-w>j
+nnoremap <leader>v <C-w>v<C-w>l
+
+" Split navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 "------------------------------------------
 " Leader Commands
 "------------------------------------------
-" Edit vimrc with ,v
-nmap <silent> <leader>v :e ~/.vimrc<CR>
-
 " Quickly switch to last buffer
 nnoremap <leader>, :e#<CR>
 

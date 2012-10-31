@@ -3,3 +3,8 @@
 --type-set=clojure=.clj
 --type-set=po=.po
 --type-set=javascript=.js
+--type-add=html=.haml
+--type-add=css=.sass,.scss
+--type-add=js=.ejs
+--type-add=ruby=.erb
+--type-add=ruby=.feature

@@ -18,4 +18,7 @@ if has("autocmd")
 
   " Fix trailing whitespace in my most used programming langauges
   autocmd BufWritePre *.py,*.coffee,*.rb silent! :StripTrailingWhiteSpace
+  
+  " Source while editing"
+  autocmd bufwritepost vimrc source $MYVIMRC
 endif

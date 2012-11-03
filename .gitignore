@@ -1,7 +1,7 @@
 .DS_Store
 .netrwhist
-/bundle
+vim/bundle
 /sessions
-/vim/.tmp
-/vim/.backup
-/vim/.undo
+vim/.tmp
+vim/.backup
+vim/.undo

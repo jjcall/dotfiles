@@ -11,6 +11,7 @@ ZSH_THEME="miloshadzic"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="vim"
+alias vinstall="vim +BundleInstall +qall"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

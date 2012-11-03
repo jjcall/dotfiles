@@ -11,6 +11,7 @@ ZSH_THEME="miloshadzic"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="vim"
+alias vinstall="vim +BundleInstall +qall"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -40,10 +41,10 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 
 # VirtualEnv
-# export WORKON_HOME=$HOME/.virtualenvs
-# source /usr/local/share/python/virtualenvwrapper.sh
-# export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# export PIP_RESPECT_VIRTUALENV=true
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/share/python/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
 
 #Rbenv
 eval "$(rbenv init - zsh)"

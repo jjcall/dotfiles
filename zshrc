@@ -36,7 +36,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH="$PATH:$HOME/.rbenv/bin"
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+
 
 # VirtualEnv
 # export WORKON_HOME=$HOME/.virtualenvs
@@ -46,3 +47,9 @@ export PATH="$PATH:$HOME/.rbenv/bin"
 
 #Rbenv
 eval "$(rbenv init - zsh)"
+
+#Hub for Github
+eval "$(hub alias -s)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

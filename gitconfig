@@ -45,4 +45,4 @@
 [core]
   quotepath = false
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	editor = mvim
+	editor = vim

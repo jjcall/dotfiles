@@ -1,6 +1,3 @@
-
-" rev. 2009-03-18
-
 " Turn on line numbers
 set number
 
@@ -9,7 +6,7 @@ set guifont=Menlo:h14
 set transparency=0 " (opaque) 0-100 (transparent)
 set noimdisable
 
-colorscheme Tomorrow-Night " use solarized theme
+colorscheme hybrid " use solarized theme
 
 " Turns on the tab bar always
 set showtabline=2

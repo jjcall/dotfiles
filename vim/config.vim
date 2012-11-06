@@ -11,8 +11,9 @@ colorscheme hybrid
 "-------------------------------------
 " Backups, Tmp Files, and Undo
 "-------------------------------------
-set backup
-set backupdir=~/.vim/.backup
+set nobackup " Needed for CodeKit to compile on save
+set nowritebackup " CodeKit requirement
+set noswapfile
 set directory=~/.vim/.tmp
 set undofile
 set undodir=~/.vim/.undo

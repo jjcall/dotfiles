@@ -10,8 +10,9 @@ ZSH_THEME="miloshadzic"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e="vim"
+alias e="mvim"
 alias vinstall="vim +BundleInstall +qall"
+alias vclean="vim +BundleClean +qall"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -49,8 +50,11 @@ export PIP_RESPECT_VIRTUALENV=true
 #Rbenv
 eval "$(rbenv init - zsh)"
 
-#Hub for Github
+# Hub for Github
 eval "$(hub alias -s)"
 
-### Added by the Heroku Toolbelt
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator]

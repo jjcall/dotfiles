@@ -24,6 +24,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'Rykka/colorv.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 
 " Commands
@@ -63,7 +64,6 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'acustodioo/vim-tmux'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
-Bundle 'spf13/PIV'
 
 " Libs
 Bundle "MarcWeber/vim-addon-mw-utils"

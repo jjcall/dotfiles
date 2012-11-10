@@ -32,7 +32,7 @@ alias vclean="vim +BundleClean +qall"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 rbenv cloudapp)
+plugins=(git rails3 rvm cloudapp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,8 +47,8 @@ source /usr/local/share/python/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 
-#Rbenv
-eval "$(rbenv init - zsh)"
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Hub for Github
 eval "$(hub alias -s)"

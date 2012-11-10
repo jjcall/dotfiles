@@ -8,6 +8,8 @@ set noimdisable
 
 colorscheme hybrid " use solarized theme
 
+set vb t_vb=
+
 " Turns on the tab bar always
 set showtabline=2
 

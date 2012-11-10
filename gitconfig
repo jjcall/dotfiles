@@ -26,12 +26,12 @@
   pretty = %Cblue%hCreset %Cgreen[%ar]%Creset (%an) %s
 
 [diff]
-  tool = diffmerge
+	tool = diffmerge
   suppressBlankEmpty = true
 
 [mergetool "diffmerge"]
-  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-  trustExitCode = false
+	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
 
 [push]
   default = tracking
@@ -46,3 +46,9 @@
   quotepath = false
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	editor = vim
+[merge]
+	tool = diffmerge
+[mergetool]
+	keepBackup = false
+[difftool "diffmerge"]
+	cmd = diffmerge $LOCAL $REMOTE

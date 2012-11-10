@@ -6,7 +6,7 @@
 " Color
 "-------------------------------------
 let g:hybrid_use_Xresources = 1
-colorscheme hybrid 
+colorscheme hybrid
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo
@@ -16,7 +16,7 @@ set nowritebackup " CodeKit requirement
 set noswapfile
 set directory=~/.vim/.tmp
 set undofile
-set undodir=~/.vim/.undo
+set undodir=~/.vimour.undo
 
 "-------------------------------------
 " UI
@@ -99,6 +99,3 @@ set t_vb=
 "-------------------------------------
 set mousehide			" Hide mouse after chars typed
 set mouse=a			" Mouse in all modes
-
-" Better complete options to speed it up
-set complete=.,w,b,u,U

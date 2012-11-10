@@ -24,6 +24,7 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'Rykka/colorv.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/Mustang2'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 

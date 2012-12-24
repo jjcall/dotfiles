@@ -16,15 +16,6 @@ set noswapfile
 set directory=~/.vim/.tmp
 set undofile
 set undodir=~/.vimour.undo
-
-"-------------------------------------
-" UI
-"-------------------------------------
-set ruler			" Ruler on
-set number			" Line numbers on
-set nowrap			" Line wrapping off
-set laststatus=2		" Always show the statusline
-set noshowmode			" Powerline takes care of it
 set title			" Set the title of the window in term
 if exists('+colorcolumn')
   set colorcolumn=80

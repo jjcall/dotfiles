@@ -15,6 +15,11 @@ alias e="mvim"
 alias vinstall="vim +BundleInstall +qall"
 alias vclean="vim +BundleClean +qall"
 
+alias runserver="python manage.py runserver"
+alias shell="python manage.py shell"
+
+alias cd_blipby="cd ~/Projects/Its\ A\ Square/blipby/src/publisher && workon blipby"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -39,7 +44,8 @@ source $ZSH/oh-my-zsh.sh
 
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/X11/bin
+export NODE_PATH="/usr/local/lib/node"
 
 
 # VirtualEnv

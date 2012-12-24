@@ -64,3 +64,6 @@ nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
 
 " format the entire file
 nmap <leader>fef ggVG=
+
+" format json
+nmap <leader>fjf :%!python -m json.tool

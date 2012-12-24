@@ -1,5 +1,5 @@
 ! colours for hybrid.vim (copied from Tomorrow-Night)
-#define t_background #1d1f21
+#define t_background #171A1C
 #define t_current_line #282a2e
 #define t_selection #373b41
 #define t_foreground #c5c8c6

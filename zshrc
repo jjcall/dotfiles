@@ -38,7 +38,7 @@ alias cd_blipby="cd ~/Projects/Its\ A\ Square/blipby/src/publisher && workon bli
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails3 rvm cloudapp)
+plugins=(git rails3 cloudapp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,3 +65,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator]
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -76,6 +76,10 @@ set listchars+=extends:>
 " The character to show in the last column when wrap is off and the line
 " continues beyond the right of the screen
 set listchars+=precedes:<
+set nocompatible    " Disable vi-compatibiliy
+set laststatus=2    " Always show the status line
+set encoding=utf-8  " Necessary to show Unicode glyphs
+set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
 
 "-------------------------------------
 " Sound 

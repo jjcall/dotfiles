@@ -7,51 +7,31 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="crunch"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e="sublime"
-alias cd_square="cd ~/Projects/Square"
-alias vinstall="vim +BundleInstall +qall"
-alias vclean="vim +BundleClean +qall"
-alias wp="git clone git://github.com/WordPress/WordPress.git ."
+# Custom aliases
+alias e="mvim" # open mvim
+alias cds="cd ~/Projects/Square" # cd into Square directory
+alias vinstall="vim +BundleInstall +qall" # install vim plugins with vundle
+alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle
+alias wp="git clone git://github.com/WordPress/WordPress.git ." # clone standard wp install
+alias wpc="git clone git@github.com:jjcall/wp-square.git ." # clone itsasquare custom wp install
+alias runserver="python manage.py runserver" # run python server inside django app
+alias shell="python manage.py shell" # open python shell
 
-alias runserver="python manage.py runserver"
-alias shell="python manage.py shell"
+COMPLETION_WAITING_DOTS="true"
 
-alias cd_blipby="cd ~/Projects/Its\ A\ Square/blipby/src/publisher && workon blipby"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx rails ruby github node npm brew)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
+# System path 
 export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/Cellar/php54/5.4.3/bin:/usr/X11/bin
-
+# Python path
 export PATH=/usr/local/share/python:$PATH
 
+# Needed for rbenv
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
 
 # tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator]
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

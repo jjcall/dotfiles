@@ -41,6 +41,7 @@ Bundle 'ervandew/supertab'
 Bundle 'gregsexton/MatchTag'
 Bundle 'matchit.zip'
 Bundle 'garbas/vim-snipmate'
+Bundle 'chrisbra/SudoEdit'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'

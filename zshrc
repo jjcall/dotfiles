@@ -10,9 +10,11 @@ ZSH_THEME="crunch"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e="mvim"
+alias e="sublime"
+alias cd_square="cd ~/Projects/Square"
 alias vinstall="vim +BundleInstall +qall"
 alias vclean="vim +BundleClean +qall"
+alias wp="git clone git://github.com/WordPress/WordPress.git ."
 
 alias runserver="python manage.py runserver"
 alias shell="python manage.py shell"
@@ -41,7 +43,7 @@ plugins=(git osx rails ruby github node npm brew)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/X11/bin
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/Cellar/php54/5.4.3/bin:/usr/X11/bin
 
 export PATH=/usr/local/share/python:$PATH
 

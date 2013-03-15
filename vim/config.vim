@@ -81,6 +81,17 @@ set laststatus=2    " Always show the status line
 set encoding=utf-8  " Necessary to show Unicode glyphs
 set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
 
+
+"-------------------------------------
+" OmniComplete 
+"-------------------------------------
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd BufNewFile,BufRead *.scss set ft=scss.css
+
 "-------------------------------------
 " Sound 
 "-------------------------------------

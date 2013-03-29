@@ -8,7 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="crunch"
 
 # Custom aliases
-alias e="mvim" # open mvim
+alias e="sublime" # open mvim
 alias cds="cd ~/Projects/Square" # cd into Square directory
 alias vinstall="vim +BundleInstall +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle

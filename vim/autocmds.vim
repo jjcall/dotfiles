@@ -21,4 +21,15 @@ if has("autocmd")
   
   " Source while editing"
   autocmd bufwritepost vimrc source $MYVIMRC
+
+  "-------------------------------------
+  " OmniComplete 
+  "-------------------------------------
+  autocmd FileType python set omnifunc=pythoncomplete#Complete
+  autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+  autocmd BufNewFile,BufRead *.scss set ft=scss.css
+  autocmd BufNewFile,BufRead *.less set ft=scss.css
 endif

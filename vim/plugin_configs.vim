@@ -29,3 +29,16 @@ map <Leader>h :nohlsearch<CR>
 " TagList
 "------------------------------------------
 noremap <f3> :TlistToggle<cr>
+
+"------------------------------------------
+" Syntastic
+"------------------------------------------
+let g:syntastic_enable_signs=1
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetype': [],
+                           \ 'passive_filetypes': ['c', 'scss'] }
+
+"------------------------------------------
+" Powerline
+"------------------------------------------
+let g:Powerline_symbols = 'unicode'

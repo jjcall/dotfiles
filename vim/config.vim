@@ -82,6 +82,13 @@ set laststatus=2    " Always show the status line
 set encoding=utf-8  " Necessary to show Unicode glyphs
 set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
 
+"-------------------------------------
+" HTML Settings
+"-------------------------------------
+let html_number_line = 1
+let html_ignore_folding = 1
+let html_use_css = 1
+let xml_use_xhtml = 1
 
 "-------------------------------------
 " Sound 
@@ -94,5 +101,5 @@ endif
 "-------------------------------------
 " Mouse 
 "-------------------------------------
-set mousehide			" Hide mouse after chars typed
+set mousehide		" Hide mouse after chars typed
 set mouse=a			" Mouse in all modes

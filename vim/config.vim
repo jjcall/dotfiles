@@ -95,9 +95,10 @@ autocmd BufNewFile,BufRead *.scss set ft=scss.css
 "-------------------------------------
 " Sound 
 "-------------------------------------
-set noerrorbells
-set novisualbell
-set t_vb=
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
 
 "-------------------------------------
 " Mouse 

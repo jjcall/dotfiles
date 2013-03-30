@@ -36,6 +36,7 @@ set foldlevelstart=99		" Remove folds
 set iskeyword+=$,@		" Add extra chars that are valid variable parts
 set nostartofline		" Dont jump to start of line after commands
 set scrolloff=3			" Keep three lines below everything
+set shortmess+=A " Always edit file, even whe swap is present
 
 "-------------------------------------
 " Text Format

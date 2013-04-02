@@ -10,8 +10,6 @@ let NERDTreeShowFiles=1
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
 let g:NERDTreeMinimalUI=1
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
-  \&& b:NERDTreeType == "primary") | q | endif"
 
 "------------------------------------------
 " Snipmate
@@ -25,18 +23,13 @@ au BufNewFile *.php set ft=php.html
 map <Leader>a :Ack!<space>
 map <Leader>h :nohlsearch<CR>
 
-"------------------------------------------
-" TagList
-"------------------------------------------
-noremap <f3> :TlistToggle<cr>
 
 "------------------------------------------
 " Syntastic
 "------------------------------------------
 let g:syntastic_enable_signs=1
-let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetype': [],
-                           \ 'passive_filetypes': ['c', 'scss'] }
+let g:syntastic_auto_loclist=1
+let g:syntastic_quiet_warnings=0
 
 "------------------------------------------
 " Powerline

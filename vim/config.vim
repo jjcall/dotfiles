@@ -63,6 +63,7 @@ set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
 " Visual 
 "-------------------------------------
 set showmatch			" Show matching brackets
+set number " Show line numbers
 set matchtime=2			" How many tenths of a second to blink
 set list
 " Reset the listchars

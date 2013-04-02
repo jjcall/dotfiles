@@ -16,7 +16,6 @@ Bundle 'gmarik/vundle'
 " Navigation
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
-Bundle 'myusuf3/numbers.vim'
 
 " UI
 Bundle 'Lokaltog/vim-powerline'

@@ -56,10 +56,6 @@ nnoremap <C-l> <C-w>l
 " SuperTab w/ OmniComplete
 let g:SuperTabDefaultCompletionType = "context"
 
-" numbers
-nnoremap <f4> :NumbersToggle<CR>
-nnoremap <f5> :NumbersOnOff<CR>
-
 "------------------------------------------
 " Leader Commands
 "------------------------------------------

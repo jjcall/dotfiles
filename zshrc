@@ -9,12 +9,11 @@ ZSH_THEME="agnoster"
 
 # Custom aliases
 alias e="sublime" # open mvim
-alias cdp="cd ~/Projects/Square" # cd into Square directory
-alias cds="cd ~/Projects/Senzari" # cd into Square directory
+alias cdsq="cd ~/Projects/Square" # cd into Square directory
+alias cdsrc="cd ~/Projects/Src" # cd into Src directory
+alias cds="cd ~/Projects/Senzari" # cd into Senzari directory
 alias vinstall="vim +BundleInstall +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle
-alias wp="git clone git://github.com/WordPress/WordPress.git ." # clone standard wp install
-alias wpc="git clone git@github.com:jjcall/wp-square.git ." # clone itsasquare custom wp install
 alias runserver="python manage.py runserver" # run python server inside django app
 alias shell="python manage.py shell" # open python shell
 

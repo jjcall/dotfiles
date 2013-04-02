@@ -83,14 +83,6 @@ set encoding=utf-8  " Necessary to show Unicode glyphs
 set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
 
 "-------------------------------------
-" HTML Settings
-"-------------------------------------
-let html_number_line = 1
-let html_ignore_folding = 1
-let html_use_css = 1
-let xml_use_xhtml = 1
-
-"-------------------------------------
 " Sound 
 "-------------------------------------
 set noerrorbells visualbell t_vb=

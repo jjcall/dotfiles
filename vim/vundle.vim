@@ -24,7 +24,6 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'skammer/vim-css-color'
 
 " Commands
 Bundle 'scrooloose/nerdcommenter'

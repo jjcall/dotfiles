@@ -5,11 +5,12 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="crunch"
+ZSH_THEME="agnoster"
 
 # Custom aliases
 alias e="sublime" # open mvim
-alias cds="cd ~/Projects/Square" # cd into Square directory
+alias cdp="cd ~/Projects/Square" # cd into Square directory
+alias cds="cd ~/Projects/Senzari" # cd into Square directory
 alias vinstall="vim +BundleInstall +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle
 alias wp="git clone git://github.com/WordPress/WordPress.git ." # clone standard wp install
@@ -19,7 +20,7 @@ alias shell="python manage.py shell" # open python shell
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git)
+plugins=(git bundler brew gem)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,6 +32,9 @@ export PATH=/usr/local/share/python:$PATH
 # Virutal Env
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/share/python/virtualenvwrapper.sh
+
+# Tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # Needed for rbenv
 if which rbenv > /dev/null; then

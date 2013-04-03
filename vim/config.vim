@@ -5,7 +5,7 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme hybrid
+colorscheme Tomorrow-Night
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

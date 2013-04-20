@@ -1,8 +1,8 @@
 " MacVim
 " Custom menlo font for powerline
-set guifont=Menlo\ for\ Powerline:h12
 
 " Hide toolbar in MacVim
 if has('gui_running')
+  set guifont=Ubuntu\ Mono\ for\ Powerline\ 16
   set guioptions=egmrt
 endif

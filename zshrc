@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="cloud"
 
 # Custom aliases
 alias e="sublime" # open mvim
@@ -39,3 +39,6 @@ source /usr/local/share/python/virtualenvwrapper.sh
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
+
+# Powerline
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

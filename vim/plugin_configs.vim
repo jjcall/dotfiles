@@ -34,4 +34,4 @@ let g:syntastic_quiet_warnings=0
 "------------------------------------------
 " Powerline
 "------------------------------------------
-let g:Powerline_symbols = 'unicode'
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim

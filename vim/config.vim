@@ -37,6 +37,7 @@ set iskeyword+=$,@		" Add extra chars that are valid variable parts
 set nostartofline		" Dont jump to start of line after commands
 set scrolloff=5			" Keep three lines below everything
 set shortmess+=A " Always edit file, even whe swap is present
+set modifiable
 
 "-------------------------------------
 " Text Format

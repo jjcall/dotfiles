@@ -21,6 +21,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'airblade/vim-gitgutter'
 

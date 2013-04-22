@@ -5,7 +5,7 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme Tomorrow-Night
+colorscheme jellybeans
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

@@ -5,13 +5,14 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cloud"
+ZSH_THEME="crunch"
 
 # Custom aliases
 alias e="sublime" # open mvim
 alias cdsq="cd ~/Projects/Square" # cd into Square directory
 alias cdsrc="cd ~/Projects/Src" # cd into Src directory
 alias cds="cd ~/Projects/Senzari" # cd into Senzari directory
+alias ss='source ~/.zshrc' # quick source
 alias vinstall="vim +BundleInstall +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle
 alias runserver="python manage.py runserver" # run python server inside django app
@@ -39,6 +40,3 @@ source /usr/local/share/python/virtualenvwrapper.sh
 if which rbenv > /dev/null; then
   eval "$(rbenv init -)";
 fi
-
-# Powerline
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

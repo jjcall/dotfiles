@@ -22,7 +22,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
-Bundle 'airblade/vim-gitgutter'
 
 " Commands
 Bundle 'scrooloose/nerdcommenter'
@@ -39,7 +38,7 @@ Bundle 'ervandew/supertab'
 Bundle 'gregsexton/MatchTag'
 Bundle 'matchit.zip'
 Bundle 'garbas/vim-snipmate'
-Bundle 'flomotlik/vim-livereload'
+Bundle 'mattn/zencoding-vim'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'

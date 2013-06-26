@@ -14,24 +14,19 @@ Bundle 'gmarik/vundle'
 " Plugins
 "------------------------------------------
 " Navigation
-Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kien/ctrlp.vim'
 
 " UI
 Bundle 'scrooloose/nerdtree'
-Bundle 'vim-scripts/taglist.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'w0ng/vim-hybrid'
 
 " Commands
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
-Bundle 'gmarik/sudo-gui.vim'
 
 " Helpers
-Bundle 'henrik/vim-indexed-search'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/syntastic'
 Bundle 'ervandew/supertab'
@@ -55,10 +50,8 @@ Bundle 'othree/html5.vim'
 Bundle 'indenthtml.vim'
 
 " Misc Languages
-Bundle 'timcharper/textile.vim'
 Bundle 'mutewinter/vim-css3-syntax'
 Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'acustodioo/vim-tmux'
 Bundle 'hallison/vim-markdown'
 Bundle 'groenewege/vim-less'
 

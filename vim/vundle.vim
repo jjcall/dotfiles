@@ -34,6 +34,8 @@ Bundle 'gregsexton/MatchTag'
 Bundle 'matchit.zip'
 Bundle 'garbas/vim-snipmate'
 Bundle 'mattn/zencoding-vim'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
@@ -58,5 +60,5 @@ Bundle 'groenewege/vim-less'
 " Libs
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
+Bundle "honza/vim-snippets"
 

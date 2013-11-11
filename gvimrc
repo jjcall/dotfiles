@@ -6,7 +6,8 @@ set guifont=Menlo:h14
 set transparency=0 " (opaque) 0-100 (transparent)
 set noimdisable
 
-colorscheme hybrid " use solarized theme
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
 
 set vb t_vb=
 

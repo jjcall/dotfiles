@@ -25,6 +25,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
+Bundle 'mklabs/grunt.vim'
 
 " Helpers
 Bundle 'Raimondi/delimitMate'

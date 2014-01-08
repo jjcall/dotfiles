@@ -35,3 +35,7 @@ let g:syntastic_quiet_warnings=0
 " Powerline
 "------------------------------------------
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+
+"------------------------------------------
+" Emmet
+"------------------------------------------

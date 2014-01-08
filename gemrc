@@ -1,5 +1,7 @@
 ---
 gem: --no-ri --no-rdoc
+update: --no-rdoc --no-ri
+
 :sources:
 - http://rubygems.org/
 :benchmark: false

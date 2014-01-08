@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="zhann"
+#ZSH_THEME="3den"
+ZSH_THEME="3den"
 
 # Custom aliases
 alias e="subl" # open mvim
@@ -21,6 +22,9 @@ alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby a
 alias bower='noglob bower'
 alias phpserve='php -S 127.0.0.1:8080'
 
+alias cd_resumerobo="cd ~/Projects/Square/resumerobo/resume_robo && source ../.resumerobo/bin/activate"
+
+
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
 
@@ -34,8 +38,11 @@ source $ZSH/oh-my-zsh.sh
 # Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# recommended by brew doctor
+# Recommended by brew doctor
 export PATH='$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+
+# Use homebrew php-cli
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # Virutal Env
 # export WORKON_HOME=~/.virtualenvs

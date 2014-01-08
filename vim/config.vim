@@ -5,7 +5,8 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme Tomorrow-Night 
+colorscheme gruvbox
+set bg=dark
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

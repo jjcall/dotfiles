@@ -15,10 +15,14 @@ Bundle 'gmarik/vundle'
 "------------------------------------------
 " Navigation
 Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-easymotion'
 
 " UI
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'morhetz/gruvbox'
+Bundle 'bling/vim-airline'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Commands
 Bundle 'scrooloose/nerdcommenter'
@@ -34,9 +38,10 @@ Bundle 'ervandew/supertab'
 Bundle 'gregsexton/MatchTag'
 Bundle 'matchit.zip'
 Bundle 'garbas/vim-snipmate'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'mtth/scratch.vim'
 
 " Ruby
 Bundle 'vim-ruby/vim-ruby'
@@ -51,6 +56,10 @@ Bundle 'leshill/vim-json'
 " HTML
 Bundle 'othree/html5.vim'
 Bundle 'indenthtml.vim'
+
+" PHP
+Bundle 'StanAngeloff/php.vim'
+Bundle 'joonty/vim-phpqa'
 
 " Misc Languages
 Bundle 'mutewinter/vim-css3-syntax'

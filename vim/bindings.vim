@@ -70,3 +70,9 @@ nmap <leader>fef ggVG=
 
 " format json
 nmap <leader>fjf :%!python -m json.tool
+
+" Toggle colorsheme color
+map <silent> <F5> :call gruvbox#bg_toggle()<CR>
+imap <silent> <F5> <ESC>:call gruvbox#bg_toggle()<CR>a
+vmap <silent> <F5> <ESC>:call gruvbox#bg_toggle()<CR>gv
+

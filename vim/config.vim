@@ -5,8 +5,7 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme gruvbox
-set bg=dark
+colorscheme Tomorrow-Night
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo
@@ -18,9 +17,6 @@ set directory=~/.vim/.tmp
 set undofile
 set undodir=~/.vimour.undo
 set title			" Set the title of the window in term
-if exists('+colorcolumn')
-  set colorcolumn=80
-endif
 
 "-------------------------------------
 " Behaviors
@@ -39,6 +35,7 @@ set nostartofline		" Dont jump to start of line after commands
 set scrolloff=5			" Keep three lines below everything
 set shortmess+=A " Always edit file, even whe swap is present
 set modifiable
+
 
 "-------------------------------------
 " Text Format

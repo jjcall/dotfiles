@@ -29,7 +29,7 @@ map <Leader>h :nohlsearch<CR>
 "------------------------------------------
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loclist=1
-let g:syntastic_quiet_warnings=0
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 "------------------------------------------
 " Powerline

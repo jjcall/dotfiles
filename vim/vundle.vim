@@ -21,6 +21,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'morhetz/gruvbox'
+Bundle 'Lokaltog/vim-distinguished'
+Bundle 'shinzui/vim-idleFingers'
 Bundle 'bling/vim-airline'
 Bundle 'kien/rainbow_parentheses.vim'
 

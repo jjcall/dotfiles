@@ -5,8 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="3den"
-ZSH_THEME="3den"
+ZSH_THEME="dracula"
 
 # Custom aliases
 alias e="subl" # open mvim
@@ -21,8 +20,7 @@ alias shell="python manage.py shell" # open python shell
 alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby and gems
 alias bower='noglob bower'
 alias phpserve='php -S 127.0.0.1:8080'
-
-alias cd_resumerobo="cd ~/Projects/Square/resumerobo/resume_robo && source ../.resumerobo/bin/activate"
+alias cd_resumerobo="cd ~/Projects/Square/resumerobo-web/resume_robo && source ../.resumerobo/bin/activate"
 
 
 COMPLETION_WAITING_DOTS="true"
@@ -45,9 +43,20 @@ export PATH='$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
 export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # Virutal Env
-# export WORKON_HOME=~/.virtualenvs
-# source /usr/local/bin/virtualenvwrapper.sh
-# export VIRTUALENV_DISTRIBUTE=true
+# set where virutal environments will live
+export WORKON_HOME=$HOME/.virtualenvs
+# ensure all new environments are isolated from the site-packages directory
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# use the same directory for virtualenvs as virtualenvwrapper
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+# makes pip detect an active virtualenv and install to it
+export PIP_RESPECT_VIRTUALENV=true
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+else
+  echo "WARNING: Can't find virtualenvwrapper.sh"
+fi
+
 
 # Pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"

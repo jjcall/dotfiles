@@ -3,7 +3,6 @@
 " Title: It's a Vim Config!
 " Version: 3.0
 "------------------------------------------
-
 " Load up the plugins
 source ~/.vim/vundle.vim
 

@@ -32,4 +32,14 @@ if has("autocmd")
   autocmd FileType php set omnifunc=phpcomplete#CompletePHP
   autocmd BufNewFile,BufRead *.scss set ft=scss.css
   autocmd BufNewFile,BufRead *.less set ft=scss.css
+
+  " Source the vimrc file after saving it
+  autocmd bufwritepost .vimrc source $MYVIMRC
+  autocmd bufwritepost config.vim source $MYVIMRC
+  autocmd bufwritepost bindings.vim source $MYVIMRC
+  autocmd bufwritepost autocmds.vim source $MYVIMRC
+  autocmd bufwritepost functions.vim source $MYVIMRC
+  autocmd bufwritepost platforms.vim source $MYVIMRC
+  autocmd bufwritepost plugin_configs.vim source $MYVIMRC
+
 endif

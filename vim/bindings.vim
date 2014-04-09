@@ -21,6 +21,12 @@ vmap K k
 " Make line completion easier
 imap <C-l> <C-x><C-l>
 
+" Switch between buffers
+function SwitchBuffer()
+  b#
+endfunction
+nmap <Tab> :call SwitchBuffer()<CR>
+
 " Expands to current directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
@@ -59,9 +65,6 @@ let g:SuperTabDefaultCompletionType = "context"
 "------------------------------------------
 " Leader Commands
 "------------------------------------------
-" Quickly switch to last buffer
-nnoremap <leader>, :e#<CR>
-
 " Underline the current line with '='
 nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
 

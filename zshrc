@@ -12,15 +12,13 @@ alias e="subl" # open mvim
 alias bower='noglob bower'
 alias b="battery" # open mvim
 alias cdp="cd ~/Projects" #cd into Projects
-alias ss='source ~/.zshrc; rvm use ruby-2.0.0-p247@global' # quick source
+alias ss='source ~/.zshrc'
 alias vinstall="vim +BundleInstall! +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle
 alias runserver="python manage.py runserver" # run python server inside django app
 alias shell="python manage.py shell" # open python shell
 alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby and gems
 alias bower='noglob bower'
-alias phpserve='php -S 127.0.0.1:8080'
-alias cd_resumerobo="cd ~/Projects/Square/resumerobo-web/resume_robo && source ../.resumerobo/bin/activate"
 
 
 COMPLETION_WAITING_DOTS="true"
@@ -56,7 +54,6 @@ if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
 else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
-
 
 # Pythonbrew
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"

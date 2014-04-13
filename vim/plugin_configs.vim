@@ -32,10 +32,21 @@ let g:syntastic_auto_loclist=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 "------------------------------------------
-" Powerline
-"------------------------------------------
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
-"------------------------------------------
 " Emmet
 "------------------------------------------
+
+"------------------------------------------
+" Airline
+"------------------------------------------
+set laststatus=2
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+  let g:airline_left_sep = '⮀'
+  let g:airline_left_alt_sep = '⮁'
+  let g:airline_right_sep = '⮂'
+  let g:airline_right_alt_sep = '⮃'
+  let g:airline_symbols.branch = '⭠'
+  let g:airline_symbols.readonly = '⭤'
+  let g:airline_symbols.linenr = '⭡'
+endif

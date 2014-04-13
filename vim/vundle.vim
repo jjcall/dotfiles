@@ -20,6 +20,7 @@ Bundle 'Lokaltog/vim-easymotion'
 " UI
 Bundle 'scrooloose/nerdtree'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'zenorocha/dracula-theme'
 Bundle 'morhetz/gruvbox'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'shinzui/vim-idleFingers'
@@ -54,6 +55,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'leshill/vim-json'
+Bundle 'mustache/vim-mustache-handlebars'
 
 " HTML
 Bundle 'othree/html5.vim'

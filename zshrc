@@ -8,8 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="dracula"
 
 # Custom aliases
-alias e="subl" # open mvim
-alias bower='noglob bower'
+alias e="st" # open sublime
 alias b="battery" # open mvim
 alias cdp="cd ~/Projects" #cd into Projects
 alias ss='source ~/.zshrc'
@@ -19,12 +18,13 @@ alias runserver="python manage.py runserver" # run python server inside django a
 alias shell="python manage.py shell" # open python shell
 alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby and gems
 alias bower='noglob bower'
+alias git=hub
 
 
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
 
-plugins=(git rvm brew)
+plugins=(git rvm brew sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,3 +59,9 @@ fi
 [[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Hub for git
+eval "$(hub alias -s)"
+
+# Tmux Colors
+alias tmux="TERM=screen-256color-bce tmux"

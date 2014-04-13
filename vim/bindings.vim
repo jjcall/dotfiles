@@ -22,10 +22,7 @@ vmap K k
 imap <C-l> <C-x><C-l>
 
 " Switch between buffers
-function SwitchBuffer()
-  b#
-endfunction
-nmap <Tab> :call SwitchBuffer()<CR>
+nmap <leader>, b#
 
 " Expands to current directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>

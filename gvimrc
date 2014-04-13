@@ -2,7 +2,7 @@
 set number
 
 " ==================== Platform setting ==================== "
-set guifont=Menlo:h14
+set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
 set transparency=0 " (opaque) 0-100 (transparent)
 set noimdisable
 

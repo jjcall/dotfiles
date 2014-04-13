@@ -26,3 +26,5 @@ source ~/.vim/functions.vim
 
 " AutoCmd Stuff
 source ~/.vim/autocmds.vim
+
+

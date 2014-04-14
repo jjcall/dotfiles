@@ -15,15 +15,12 @@ Bundle 'gmarik/vundle'
 "------------------------------------------
 " Navigation
 Bundle 'kien/ctrlp.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-easymotion'
 
 " UI
 Bundle 'scrooloose/nerdtree'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'zenorocha/dracula-theme'
-Bundle 'morhetz/gruvbox'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'shinzui/vim-idleFingers'
 Bundle 'bling/vim-airline'
 Bundle 'kien/rainbow_parentheses.vim'
 

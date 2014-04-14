@@ -5,13 +5,12 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme Tomorrow-Night
+colorscheme jellybeans
+let g:jellybeans_background_color_256 = '234'
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo
 "-------------------------------------
-set nobackup " Needed for CodeKit to compile on save
-set nowritebackup " CodeKit requirement
 set noswapfile
 set directory=~/.vim/.tmp
 set undofile

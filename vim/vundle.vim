@@ -15,11 +15,11 @@ Bundle 'gmarik/vundle'
 "------------------------------------------
 " Navigation
 Bundle 'kien/ctrlp.vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'christoomey/vim-tmux-navigator'
 
 " UI
+Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
 Bundle 'kien/rainbow_parentheses.vim'

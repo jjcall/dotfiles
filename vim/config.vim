@@ -6,7 +6,7 @@
 " Color
 "-------------------------------------
 colorscheme jellybeans
-let g:jellybeans_background_color_256 = '234'
+let g:jellybeans_background_color_256 = 'none'
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

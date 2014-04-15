@@ -11,6 +11,7 @@ ZSH_THEME="zhann"
 alias e="st" # open sublime
 alias b="battery" # open mvim
 alias cdp="cd ~/Projects" #cd into Projects
+alias cda="cd ~/Projects/AppTheory" #cd into AppTheory
 alias ss='source ~/.zshrc'
 alias vinstall="vim +BundleInstall! +qall" # install vim plugins with vundle
 alias vclean="vim +BundleClean +qall" # cleans and uninstalls vim plugins with vundle

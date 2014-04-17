@@ -22,6 +22,7 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bling/vim-airline'
+Bundle 'paranoida/vim-airlineish'
 Bundle 'kien/rainbow_parentheses.vim'
 
 " Commands

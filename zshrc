@@ -7,6 +7,11 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="zhann"
 
+COMPLETION_WAITING_DOTS="true"
+DISABLE_AUTO_TITLE="true"
+
+plugins=(git rvm brew sublime)
+
 # Custom aliases
 alias e="st" # open sublime
 alias b="battery" # open mvim
@@ -21,13 +26,10 @@ alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby a
 alias bower='noglob bower'
 alias git=hub
 
-
-COMPLETION_WAITING_DOTS="true"
-DISABLE_AUTO_TITLE="true"
-
-plugins=(git rvm brew sublime)
-
 source $ZSH/oh-my-zsh.sh
+
+# Default editor
+export EDITOR="vim"
 
 # Tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
@@ -56,9 +58,7 @@ else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
-# Pythonbrew
-[[ -s "$HOME/.pythonbrew/etc/bashrc" ]] && source "$HOME/.pythonbrew/etc/bashrc"
-
+#RVM
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Hub for git

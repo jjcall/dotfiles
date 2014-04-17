@@ -23,7 +23,6 @@ au BufNewFile *.php set ft=php.html
 map <Leader>a :Ack!<space>
 map <Leader>h :nohlsearch<CR>
 
-
 "------------------------------------------
 " Syntastic
 "------------------------------------------
@@ -32,8 +31,19 @@ let g:syntastic_auto_loclist=1
 let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 "------------------------------------------
+" Ctrl-P
+"------------------------------------------
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': '',
+  \ }
+
+"------------------------------------------
 " Emmet
 "------------------------------------------
+let g:user_emmet_expandabbr_key = '<Tab>'
+let g:use_emmet_complete_tag = 1
 
 "------------------------------------------
 " Airline

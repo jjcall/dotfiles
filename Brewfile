@@ -7,6 +7,12 @@ upgrade
 # Install wget with IRI support
 install wget --enable-iri
 
+# Install Ruby Stuff
+install rbenv
+install ruby-build
+install rbenv-gem-reshash
+install rbenv-default-gems
+
 # Install other useful binaries
 install ack
 install git

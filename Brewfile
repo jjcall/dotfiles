@@ -10,7 +10,7 @@ install wget --enable-iri
 # Install Ruby Stuff
 install rbenv
 install ruby-build
-install rbenv-gem-reshash
+install rbenv-gem-rehash
 install rbenv-default-gems
 
 # Install other useful binaries

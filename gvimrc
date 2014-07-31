@@ -2,13 +2,11 @@
 set number
 
 " ==================== Platform setting ==================== "
-set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h14
+set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
 set transparency=0 " (opaque) 0-100 (transparent)
 set noimdisable
 
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
-
+colorscheme Tomorrow-Night
 set vb t_vb=
 
 " Turns on the tab bar always

@@ -1,76 +1,69 @@
-"------------------------------------------
-" Vundle
-"------------------------------------------
-set nocompatible			" be iMproved
-filetype off				" required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let vundle manage Vundle
-Bundle 'gmarik/vundle'
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+"
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
 "------------------------------------------
 " Plugins
 "------------------------------------------
-" Navigation
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'christoomey/vim-tmux-navigator'
-
 " UI
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'bling/vim-airline'
-Bundle 'paranoida/vim-airlineish'
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'bling/vim-airline'
+Plugin 'paranoida/vim-airlineish'
+
+" Navigation
+Plugin 'kien/ctrlp.vim'
+Plugin 'ctags.vim'
 
 " Commands
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mileszs/ack.vim'
-Bundle 'mklabs/grunt.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mileszs/ack.vim'
+Plugin 'danro/rename.vim'
 
 " Helpers
-Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
-Bundle 'ervandew/supertab'
-Bundle 'gregsexton/MatchTag'
-Bundle 'matchit.zip'
-Bundle 'garbas/vim-snipmate'
-Bundle 'mattn/emmet-vim'
-Bundle 'rizzatti/funcoo.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'mtth/scratch.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplete'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'matchit.zip'
 
 " Ruby
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-endwise'
+Plugin 'thoughtbot/vim-rspec'
 
 " Javascript
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'leshill/vim-json'
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'leshill/vim-json'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " HTML
-Bundle 'othree/html5.vim'
-Bundle 'indenthtml.vim'
+Plugin 'othree/html5.vim'
+Plugin 'indenthtml.vim'
 
-" PHP
-Bundle 'StanAngeloff/php.vim'
-Bundle 'joonty/vim-phpqa'
+" Misc
+Plugin 'mutewinter/vim-css3-syntax'
+Plugin 'hallison/vim-markdown'
+Plugin 'groenewege/vim-less'
 
-" Misc Languages
-Bundle 'mutewinter/vim-css3-syntax'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'hallison/vim-markdown'
-Bundle 'groenewege/vim-less'
 
-" Libs
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/vim-snippets"
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required

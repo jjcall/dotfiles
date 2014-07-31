@@ -5,8 +5,12 @@
 "-------------------------------------
 " Color
 "-------------------------------------
-colorscheme jellybeans
-let g:jellybeans_background_color_256 = 'none'
+colorscheme Tomorrow-Night-Eighties
+
+"-------------------------------------
+" Font
+"-------------------------------------
+set gfn=Bitstream\ Vera\ Sans\ Mono\ 10
 
 "-------------------------------------
 " Backups, Tmp Files, and Undo

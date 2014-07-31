@@ -60,3 +60,10 @@ if !exists('g:airline_symbols')
   let g:airline_symbols.readonly = '⭤'
   let g:airline_symbols.linenr = '⭡'
 endif
+
+"------------------------------------------
+" Airline
+"------------------------------------------
+let g:neocomplete#enable_at_startup = 1
+
+

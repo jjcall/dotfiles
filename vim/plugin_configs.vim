@@ -62,3 +62,8 @@ let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
 let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+
+"------------------------------------------
+" JS Beautifuy
+"------------------------------------------
+ map <c-f> :call JsBeautify()<cr>

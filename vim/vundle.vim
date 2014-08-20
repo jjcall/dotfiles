@@ -57,6 +57,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'leshill/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin '1995eaton/vim-better-javascript-completion'
+Plugin 'maksimr/vim-jsbeautify'
+Plugin 'marijnh/tern_for_vim'
 
 " HTML
 Plugin 'othree/html5.vim'

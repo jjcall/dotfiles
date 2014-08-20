@@ -59,16 +59,21 @@ set ignorecase			" Case insensitive search
 set smartcase			" Non-case sensitive search
 set incsearch
 set hlsearch
+
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
-  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
+  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,
+  \.git,node_modules,_site,*.class,*.zip,*.aux
+
 
 "-------------------------------------
 " Visual 
 "-------------------------------------
 set showmatch			" Show matching brackets
 set number " Show line numbers
+set relativenumber
 set matchtime=2			" How many tenths of a second to blink
 set list
+
 " Reset the listchars
 set listchars=""
 " a tab should display as "  ", trailing whitespace as "."
@@ -85,6 +90,9 @@ set nocompatible    " Disable vi-compatibiliy
 set laststatus=2    " Always show the status line
 set encoding=utf-8  " Necessary to show Unicode glyphs
 set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
+set cursorline " highlight current line
+set colorcolumn=80
+
 
 "-------------------------------------
 " Sound 

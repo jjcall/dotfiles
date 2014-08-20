@@ -40,6 +40,16 @@ noremap L $
 " Clear search
 map <silent><Leader>/ :nohls<CR>
 
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+noremap H ^
+noremap L $
+vnoremap L g_
+
+
+
 " Highlight search word under cursor without jumping to next
 nnoremap <leader>h *<C-o>
 

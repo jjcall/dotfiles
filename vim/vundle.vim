@@ -33,12 +33,16 @@ Plugin 'mileszs/ack.vim'
 Plugin 'danro/rename.vim'
 
 " Helpers
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplete'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
 Plugin 'matchit.zip'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'wellle/tmux-complete.vim'
+Plugin 'ervandew/supertab'
+Plugin 'mattn/emmet-vim'
 
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
@@ -52,6 +56,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'leshill/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin '1995eaton/vim-better-javascript-completion'
 
 " HTML
 Plugin 'othree/html5.vim'
@@ -61,6 +66,7 @@ Plugin 'indenthtml.vim'
 Plugin 'mutewinter/vim-css3-syntax'
 Plugin 'hallison/vim-markdown'
 Plugin 'groenewege/vim-less'
+Plugin '1995eaton/vim-better-css-completion'
 
 
 

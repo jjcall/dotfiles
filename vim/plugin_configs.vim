@@ -40,12 +40,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 "------------------------------------------
-" Emmet
-"------------------------------------------
-let g:user_emmet_expandabbr_key = '<Tab>'
-let g:use_emmet_complete_tag = 1
-
-"------------------------------------------
 " Airline
 "------------------------------------------
 set laststatus=2
@@ -62,8 +56,9 @@ if !exists('g:airline_symbols')
 endif
 
 "------------------------------------------
-" Airline
+" YCM + UltiSnips
 "------------------------------------------
-let g:neocomplete#enable_at_startup = 1
-
-
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]

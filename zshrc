@@ -54,5 +54,5 @@ fi
 # Hub for git
 eval "$(hub alias -s)"
 
-# rbenv
-eval "$(rbenv init -)"
+# Rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi

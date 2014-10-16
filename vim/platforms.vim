@@ -10,4 +10,5 @@ if has('gui_running')
   au InsertEnter * set timeoutlen=0
   au InsertLeave * set timeoutlen=1000
   augroup END
+  set term=xterm
 endif

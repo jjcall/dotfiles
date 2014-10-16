@@ -39,6 +39,9 @@ let g:ctrlp_custom_ignore = {
   \ 'link': '',
   \ }
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 "------------------------------------------
 " Airline
 "------------------------------------------

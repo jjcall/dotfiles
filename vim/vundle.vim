@@ -63,6 +63,7 @@ Plugin 'marijnh/tern_for_vim'
 " HTML
 Plugin 'othree/html5.vim'
 Plugin 'indenthtml.vim'
+Plugin 'gregsexton/MatchTag'
 
 " Misc
 Plugin 'mutewinter/vim-css3-syntax'

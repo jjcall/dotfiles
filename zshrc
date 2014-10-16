@@ -13,7 +13,7 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git rvm brew sublime)
 
 # Custom aliases
-alias e="vim" # open vim
+alias e="subl" # open vim
 alias cdp="cd ~/Projects" #cd into Projects
 alias cda="cd ~/Projects/AppTheory" #cd into AppTheory
 alias ss='source ~/.zshrc'
@@ -26,30 +26,13 @@ alias git=hub
 source $ZSH/oh-my-zsh.sh
 
 # Default editor
-export EDITOR="vim"
-
+export EDITOR="subl"
 
 # Recommended by brew doctor
-export PATH='$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+export PATH='$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
 
 # CaskFile
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
-
-
-# Virutal Env
-# set where virutal environments will live
-export WORKON_HOME=$HOME/.virtualenvs
-# ensure all new environments are isolated from the site-packages directory
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
-# use the same directory for virtualenvs as virtualenvwrapper
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-# makes pip detect an active virtualenv and install to it
-export PIP_RESPECT_VIRTUALENV=true
-if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
-  source /usr/local/bin/virtualenvwrapper.sh
-else
-  echo "WARNING: Can't find virtualenvwrapper.sh"
-fi
 
 # Hub for git
 eval "$(hub alias -s)"

@@ -48,6 +48,8 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
+" Toggle paste
+set pastetoggle=<leader>p
 
 
 " Highlight search word under cursor without jumping to next

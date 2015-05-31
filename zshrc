@@ -13,9 +13,8 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git rvm brew sublime)
 
 # Custom aliases
-alias e="subl" # open vim
+alias e="vim" # open vim
 alias cdp="cd ~/Projects" #cd into Projects
-alias cda="cd ~/Projects/AppTheory" #cd into AppTheory
 alias ss='source ~/.zshrc'
 alias runserver="python manage.py runserver" # run python server inside django app
 alias shell="python manage.py shell" # open python shell
@@ -26,16 +25,19 @@ alias git=hub
 source $ZSH/oh-my-zsh.sh
 
 # Default editor
-export EDITOR="subl"
+export EDITOR="atom"
+
+# Cask Default
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 
 # Recommended by brew doctor
-export PATH='$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
-
-# CaskFile
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
-
-# Hub for git
-eval "$(hub alias -s)"
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
 
 # Rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# VirtualEnv
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh

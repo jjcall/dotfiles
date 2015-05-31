@@ -1,62 +1,25 @@
-"------------------------------------------
-" Bindings
-"------------------------------------------
-" Set leader to ,
-" Note: This line MUST come before any <leader> mapping
-let mapleader=","
+let mapleader = ","
+let g:mapleader = ","
+nmap <leader>w :w!<cr>
+
+"-------------------------------------------------------------
+" Moving Around 
+"-------------------------------------------------------------
+" Treat long lines as break lines
+map j gj
+map k gk
 
 " Fixes common typos
-command! W w
-command! Q q
 map <F1> <Esc>
 imap <F1> <Esc>
 
 " Pinky issues
 cnoremap w' w<CR>
 
-" Removes doc lookup binding becuase it's easy to fat finger
-nmap K k
-vmap K k
-
-" Make line completion easier
-imap <C-l> <C-x><C-l>
-
-" Switch between buffers
-nmap <leader>, b#
-
-" Expands to current directory in command mode
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-
-" Yank entire buffer!
-nmap gy :%y+<cr>
-
-" Make Y Behave normal like other capital commands
-nnoremap Y y$
-
-" Jump to beggining and end of line quickly
-noremap H ^
-noremap L $
-
-" Clear search
-map <silent><Leader>/ :nohls<CR>
-
-" Keep search matches in the middle of the window.
-nnoremap n nzzzv
-nnoremap N Nzzzv
-
-noremap H ^
-noremap L $
-vnoremap L g_
-
-" Toggle paste
-set pastetoggle=<leader>p
-
-
-" Highlight search word under cursor without jumping to next
-nnoremap <leader>h *<C-o>
-
-" Hit jj to exit insert mode
-imap jj <Esc>
+" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
+  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,
+  \.git,node_modules,_site,*.class,*.zip,*.aux
 
 " Open a vertical/horizontal split, switch over to it
 nnoremap <leader>s <C-w>s<C-w>j
@@ -68,13 +31,81 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" SuperTab w/ OmniComplete
-let g:SuperTabDefaultCompletionType = "context"
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+map <leader>t<leader> :tabnext 
 
-"------------------------------------------
-" Leader Commands
-"------------------------------------------
-" Underline the current line with '='
+" Let 'tl' toggle between this and the last accessed tab
+let g:lasttab = 1
+nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+" Expands to current directory in command mode
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
+" Jump to beggining and end of line quickly
+noremap H ^
+noremap L $
+
+" Remap VIM 0 to first non-blank character
+map 0 ^
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+  nmap <D-j> <M-j>
+  nmap <D-k> <M-k>
+  vmap <D-j> <M-j>
+  vmap <D-k> <M-k>
+endif
+
+" Delete trailing white space on save, useful for Python and CoffeeScript ;)
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+noremap H ^
+noremap L $
+vnoremap L g_
+
+" Hit jj to exit insert mode
+imap jj <Esc>
+
+"-------------------------------------------------------------
+" Spell Checking
+"-------------------------------------------------------------
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+" Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
+
+"-------------------------------------------------------------
+" Misc commands
+"-------------------------------------------------------------
+"" Underline the current line with '='
 nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
 
 " format the entire file
@@ -83,8 +114,17 @@ nmap <leader>fef ggVG=
 " format json
 nmap <leader>fjf :%!python -m json.tool
 
-" Toggle colorsheme color
-map <silent> <F5> :call gruvbox#bg_toggle()<CR>
-imap <silent> <F5> <ESC>:call gruvbox#bg_toggle()<CR>a
-vmap <silent> <F5> <ESC>:call gruvbox#bg_toggle()<CR>gv
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Quickly open a buffer for scribble
+map <leader>q :e ~/buffer<cr>
+
+" Quickly open a markdown buffer for scribble
+map <leader>x :e ~/buffer.md<cr>
+ 
+" Toggle paste
+set pastetoggle=<F3>
+
+
 

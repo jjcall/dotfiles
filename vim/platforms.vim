@@ -1,6 +1,7 @@
+" --------------------------------------------------------------
 " MacVim
-
-" Hide toolbar in MacVim
+" --------------------------------------------------------------
+" " Hide toolbar in MacVim
 if has('gui_running')
   set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h16
   set guioptions=egmrt

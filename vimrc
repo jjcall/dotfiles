@@ -1,7 +1,7 @@
 "------------------------------------------
 " By: Jason Calleiro
 " Title: It's a Vim Config!
-" Version: 3.0
+" Version: 4.0
 "------------------------------------------
 " Load up the plugins
 source ~/.vim/vundle.vim
@@ -17,11 +17,5 @@ source ~/.vim/bindings.vim
 
 " Plugin configs
 source ~/.vim/plugin_configs.vim
-
-" Custom functions
-source ~/.vim/functions.vim
-
-" AutoCmd Stuff
-source ~/.vim/autocmds.vim
 
 

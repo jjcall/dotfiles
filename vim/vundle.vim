@@ -1,49 +1,53 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible
+filetype off
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-"
-" let Vundle manage Vundle, required
+" let Vundle manage Vundle
 Plugin 'gmarik/Vundle.vim'
 
-"------------------------------------------
-" Plugins
-"------------------------------------------
+"-------------------------------------
 " UI
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+"-------------------------------------
+Plugin 'ajh17/Spacegray.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'chriskempson/base16-vim'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'bling/vim-airline'
 Plugin 'paranoida/vim-airlineish'
+Plugin 'nanotech/jellybeans.vim'
 
-" Navigation
-Plugin 'kien/ctrlp.vim'
-Plugin 'ctags.vim'
-
-" Commands
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
+"-------------------------------------
+" Utils
+"-------------------------------------
 Plugin 'mileszs/ack.vim'
-Plugin 'danro/rename.vim'
-
-" Helpers
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/unite.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'haya14busa/incsearch.vim'
+
+"-------------------------------------
+" Commands 
+"-------------------------------------
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+
+"-------------------------------------
+" Helpers
+"-------------------------------------
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
-Plugin 'matchit.zip'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'wellle/tmux-complete.vim'
-Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Valloric/YouCompleteMe'
 
+"-------------------------------------
+" Languages 
+"-------------------------------------
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-haml'
@@ -51,28 +55,15 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-endwise'
 Plugin 'thoughtbot/vim-rspec'
 
-" Javascript
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'leshill/vim-json'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin '1995eaton/vim-better-javascript-completion'
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'marijnh/tern_for_vim'
-
 " HTML
 Plugin 'othree/html5.vim'
 Plugin 'indenthtml.vim'
 Plugin 'gregsexton/MatchTag'
 
-" Misc
-Plugin 'mutewinter/vim-css3-syntax'
-Plugin 'hallison/vim-markdown'
-Plugin 'groenewege/vim-less'
-Plugin '1995eaton/vim-better-css-completion'
+" JS
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'marijnh/tern_for_vim'
 
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()
+filetype plugin indent on

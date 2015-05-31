@@ -1,110 +1,199 @@
-"-------------------------------------
-" Vim setup
-"-------------------------------------
-
-
-"-------------------------------------
-" Color
-"-------------------------------------
-colorscheme jellybeans
-
-"-------------------------------------
-" Font
-"-------------------------------------
-set gfn=Bitstream\ Vera\ Sans\ Mono\ 10
-
-"-------------------------------------
-" Backups, Tmp Files, and Undo
-"-------------------------------------
-set noswapfile
-set directory=~/.vim/.tmp
-set undofile
-set undodir=~/.vimour.undo
-set title			" Set the title of the window in term
-
-"-------------------------------------
-" Behaviors
-"-------------------------------------
-syntax enable
-set autoread			" Automatically reload changes if detected
-set wildmenu			" Turn on wild menu
-set hidden			" Change buffer without saving
-set history=768			" Number of things to remember
-set clipboard+=unnamed		" Yanks go on clipboard instead
-set autowrite			" Writes on make/shell commands
-set timeoutlen=350		" Time to wait for a command
-set foldlevelstart=99		" Remove folds
-set iskeyword+=$,@		" Add extra chars that are valid variable parts
-set nostartofline		" Dont jump to start of line after commands
-set scrolloff=5			" Keep three lines below everything
-set shortmess+=A " Always edit file, even whe swap is present
+"-------------------------------------------------------------
+" Behaviors 
+"-------------------------------------------------------------
+set history=700       " Sets how many lines of history VIM has to remember
+filetype plugin on    " Enable filetype plugins
+filetype indent on
+set number
+set ignorecase        " Ingnore case when searching
+set so=7
+set smartcase         " Smart search 
+set hlsearch          " Highligt search
+set incsearch         " Incremental search
+set magic             " Regex
+set autoread          " Automatically reload changes if detected
+set wildmenu          " Turn on wild menu
+set hidden            " Change buffer without saving
+set clipboard+=unnamed    " Yanks go on clipboard instead
+set timeoutlen=350    " Time to wait for a command
+set foldlevelstart=99 " Remove folds
+set iskeyword+=$,@    " Add extra chars that are valid variable parts
+set nostartofline     " Dont jump to start of line after commands
+set scrolloff=5       " Keep three lines below everything
+set shortmess+=A      " Always edit file, even whe swap is present
 set modifiable
 
+" Ignore compiled files
+set wildignore=*.o,*~,*.pyc
+if has("win16") || has("win32")
+  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+else
+  set wildignore+=.git\*,.hg\*,.svn\*
+endif
 
-"-------------------------------------
-" Text Format
-"-------------------------------------
+"-------------------------------------------------------------
+" VIM user interface
+"-------------------------------------------------------------
+set ruler             " Always show current position
+set hid               " Abadone buffer when empty
+" Configure backpace so it acts as it should
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+set showmatch        " Matching bracket
+set mat=2
+set noerrorbells     " Visual bells
+set novisualbell
+set t_vb=
+set tm=500
+set nowrap
+set nolist
+
+" Bell
+set novisualbell
+set visualbell t_vb=
+
+"-------------------------------------------------------------
+" Colors and Fonts
+"-------------------------------------------------------------
+syntax enable 
+try
+  colorscheme jellybeans
+catch
+endtry
+" Set extra options when running in GUI mode
+if has("gui_running")
+  set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
+  set guioptions=egmrt
+  set ttimeoutlen=10
+  augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+  augroup END
+  set term=xterm
+endif
+set encoding=utf8
+set ffs=unix,dos,mac
+set gfn=Bitstream\ Vera\ Sans\ Mono\ 18 " Fonts
+
+"-------------------------------------------------------------
+" Files, backups and undo
+"-------------------------------------------------------------
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
+"-------------------------------------------------------------
+" Text, tab and indent related
+"-------------------------------------------------------------
 set tabstop=2
-set backspace=2			" Delete everything with backspace
-set shiftwidth=2		" Tabs under smart indent
+set backspace=2     " Delete everything with backspace
+set shiftwidth=2    " Tabs under smart indent
 set cindent
 set autoindent
 set smarttab
 set expandtab
 set nowrap
 
-"-------------------------------------
-" Searching
-"-------------------------------------
-set ignorecase			" Case insensitive search
-set smartcase			" Non-case sensitive search
-set incsearch
-set hlsearch
+"-------------------------------------------------------------
+" Visual mode related
+"-------------------------------------------------------------
+" Visual mode pressing * or # searches for the current selection
+" Super useful! From an idea by Michael Naumann
+vnoremap <silent> * :call VisualSelection('f')<CR>
+vnoremap <silent> # :call VisualSelection('b')<CR>
 
-set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
-  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,
-  \.git,node_modules,_site,*.class,*.zip,*.aux
-
-
-"-------------------------------------
-" Visual 
-"-------------------------------------
-set showmatch			" Show matching brackets
-set number " Show line numbers
-set relativenumber
-set matchtime=2			" How many tenths of a second to blink
-set list
-
-" Reset the listchars
-set listchars=""
-" a tab should display as "  ", trailing whitespace as "."
-set listchars=tab:\ \  " Indentended trailing whitespace
-" show trailing spaces as dots
-set listchars+=trail:.
-" The character to show in the last column when wrap is off and the line
-" continues beyond the right of the screen
-set listchars+=extends:>
-" The character to show in the last column when wrap is off and the line
-" continues beyond the right of the screen
-set listchars+=precedes:<
-set nocompatible    " Disable vi-compatibiliy
+"-------------------------------------------------------------
+" Status line
+"-------------------------------------------------------------
 set laststatus=2    " Always show the status line
-set encoding=utf-8  " Necessary to show Unicode glyphs
-set t_Co=256        " Explicitly tell Vim that the terminal supports 256 colors
-set cursorline " highlight current line
-set colorcolumn=80
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
+"-------------------------------------------------------------
+" Helper functions
+"-------------------------------------------------------------
+function! CmdLine(str)
+  exe "menu Foo.Bar :" . a:str
+  emenu Foo.Bar
+  unmenu Foo
+endfunction 
+
+function! VisualSelection(direction, extra_filter) range
+  let l:saved_reg = @"
+  execute "normal! vgvy"
+
+  let l:pattern = escape(@", '\\/.*$^~[]')
+  let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+  if a:direction == 'b'
+    execute "normal ?" . l:pattern . "^M"
+  elseif a:direction == 'gv'
+    call CmdLine("Ack \"" . l:pattern . "\" " )
+  elseif a:direction == 'replace'
+    call CmdLine("%s" . '/'. l:pattern . '/')
+  elseif a:direction == 'f'
+    execute "normal /" . l:pattern . "^M"
+  endif
+
+  let @/ = l:pattern
+  let @" = l:saved_reg
+endfunction
+
+" Returns true if paste mode is enabled
+function! HasPaste()
+  if &paste
+    return 'PASTE MODE  '
+  endif
+  return ''
+endfunction
+
+" Don't close window, when deleting a buffer
+command! Bclose call <SID>BufcloseCloseIt()
+function! <SID>BufcloseCloseIt()
+  let l:currentBufNum = bufnr("%")
+  let l:alternateBufNum = bufnr("#")
+
+  if buflisted(l:alternateBufNum)
+    buffer #
+  else
+    bnext
+  endif
+
+  if bufnr("%") == l:currentBufNum
+    new
+  endif
+
+  if buflisted(l:currentBufNum)
+    execute("bdelete! ".l:currentBufNum)
+  endif
+endfunction
 
 
-"-------------------------------------
-" Sound 
-"-------------------------------------
-set noerrorbells visualbell t_vb=
-if has('autocmd')
-  autocmd GUIEnter * set visualbell t_vb=
+"-------------------------------------------------------------
+"  Auto Commands
+"-------------------------------------------------------------
+if has("autocmd")
+  " No formatting on o key newlines
+  autocmd BufNewFile,BufEnter * set formatoptions-=o
+
+  " No more complaining about untitled documents
+  autocmd FocusLost silent! :wa
+
+
+  " When editing a file, always jump to the last cursor position.
+  " This must be after the uncompress commands.
+  autocmd BufReadPost *
+  \ if line("'\"") > 1 && line ("'\"") <= line("$") |
+  \   exe "normal! g`\"" |
+  \ endif
+
+  " Fix trailing whitespace in my most used programming langauges
+  autocmd BufWritePre *.py,*.coffee,*.rb silent! :StripTrailingWhiteSpace
+
+  " Omnicomplete
+  autocmd FileType javascript setlocal omnifunc=tern#Complete
+  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 endif
-
-"-------------------------------------
-" Mouse 
-"-------------------------------------
-set mousehide		" Hide mouse after chars typed
-set mouse=a			" Mouse in all modes

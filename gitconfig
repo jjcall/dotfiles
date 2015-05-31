@@ -5,6 +5,7 @@
 [color]
   ui = auto
   excludesfile = ~/.gitignore
+  interactive = true
 
 [color "branch"]
   current = yellow black
@@ -22,11 +23,18 @@
   untracked = cyan reverse
   branch = magenta
 
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = jasoncalleiro@gmail.com
+  smtpserverport = 587
+
 [format]
   pretty = %Cblue%hCreset %Cgreen[%ar]%Creset (%an) %s
 
 [push]
-  default = tracking
+  default = upstream 
+  rebase = true
 
 [branch]
 	autosetupmerge = true
@@ -34,20 +42,8 @@
 [github]
   user = alikins
 
-[merge]
-  tool = chdiff
-[mergetool "chdiff"]
-  cmd = /usr/bin/env chdiff --wait $LOCAL $REMOTE
-  keepBackup = false
-  trustExitCode = false
-[difftool "Changes"]
-  cmd = chdiff \"$LOCAL\" \"$REMOTE\"
-[difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[difftooltool]
-  prompt = false
-[diff]
-  tool = Kaleidoscope
+[mergetool "vimdiff3"]
+  cmd = vim -u ~/.vimrc -f -d -c \"wincmd J\" \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 
 [core]
   quotepath = false
@@ -55,8 +51,19 @@
 	editor = vim
 
 [alias]
-  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
   lg = !"git lg1"
+  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+  ours = checkout --ours
+  theirs = checkout --theirs
+  aours = "!f() { (git reset $* >/dev/null); git ours $* && git add $*; }; f"
+  atheirs = "!f() { (git reset $* >/dev/null); git theirs $* && git add $*; }; f"
+
+  res = reset
+  resa = reset HEAD
+  resh = "!f() { git stash && git reset --hard $@; }; f"
+  cundo = reset HEAD^1
+
+
 [help]
 	autocorrect = 1

@@ -180,7 +180,6 @@ if has("autocmd")
   " No more complaining about untitled documents
   autocmd FocusLost silent! :wa
 
-
   " When editing a file, always jump to the last cursor position.
   " This must be after the uncompress commands.
   autocmd BufReadPost *
@@ -196,4 +195,9 @@ if has("autocmd")
   autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
   autocmd FileType css set omnifunc=csscomplete#CompleteCSS
   autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+  " Python related tab settings
+  autocmd FileType python set sw=4
+  autocmd FileType python set ts=4
+  autocmd FileType python set sts=4
 endif

@@ -44,6 +44,11 @@ let g:NERDTreeChDirMode=2
 let g:NERDTreeMinimalUI=1
 
 "-------------------------------------------------------------
+" TagBar
+"-------------------------------------------------------------
+nmap <F3> :TagBarToggle<CR>
+
+"-------------------------------------------------------------
 " Airline
 "-------------------------------------------------------------
 let g:airline_theme = 'tomorrow'
@@ -102,6 +107,8 @@ nnoremap <silent> <C-p> :Unite -start-insert -buffer-name=files -winheight=10 fi
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
 
 "-------------------------------------------------------------
 " UtilSnips
@@ -110,6 +117,7 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsListSnippets = "<c-k>"
 
 "-------------------------------------------------------------
 " Delimitmate 

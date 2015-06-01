@@ -22,12 +22,14 @@ Plugin 'nanotech/jellybeans.vim'
 " Utils
 "-------------------------------------
 Plugin 'mileszs/ack.vim'
+Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'haya14busa/incsearch.vim'
+Plugin 'majutsushi/tagbar'
 
 "-------------------------------------
 " Commands 
@@ -64,6 +66,13 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'wavded/vim-stylus'
+Plugin 'juvenn/mustache.vim'
+
+" Python
+Plugin 'django.vim'
 
 call vundle#end()
 filetype plugin indent on

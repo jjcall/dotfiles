@@ -87,6 +87,9 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
+" search and replace word under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
 " Hit jj to exit insert mode
 imap jj <Esc>
 

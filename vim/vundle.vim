@@ -14,9 +14,8 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Plugin 'bling/vim-airline'
-Plugin 'paranoida/vim-airlineish'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'itchyny/lightline.vim'
 
 "-------------------------------------
 " Utils

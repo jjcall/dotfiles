@@ -62,6 +62,7 @@ catch
 endtry
 " Set extra options when running in GUI mode
 if has("gui_running")
+  set t_Co=256
   set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
   set guioptions=egmrt
   set ttimeoutlen=10
@@ -200,4 +201,9 @@ if has("autocmd")
   autocmd FileType python set sw=4
   autocmd FileType python set ts=4
   autocmd FileType python set sts=4
+
+  augroup reload_vimrc
+      autocmd!
+      autocmd bufwritepost $MYVIMRC nested source $MYVIMRC 
+  augroup END
 endif

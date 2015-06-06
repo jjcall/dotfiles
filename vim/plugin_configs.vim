@@ -49,9 +49,16 @@ let g:NERDTreeMinimalUI=1
 nmap <F3> :TagBarToggle<CR>
 
 "-------------------------------------------------------------
-" Airline
+" Lightline
 "-------------------------------------------------------------
-let g:airline_theme = 'tomorrow'
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }
 
 " powerline symbols
 if !exists('g:airline_symbols')

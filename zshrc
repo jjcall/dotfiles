@@ -10,7 +10,7 @@ ZSH_THEME="zhann"
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_TITLE="true"
 
-plugins=(git rvm brew sublime)
+plugins=(git git-extras rvm brew)
 
 # Custom aliases
 alias e="vim" # open vim
@@ -20,7 +20,13 @@ alias runserver="python manage.py runserver" # run python server inside django a
 alias shell="python manage.py shell" # open python shell
 alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby and gems
 alias bower='noglob bower'
-alias git=hub
+alias tmux="TERM=xterm-256color tmux"
+
+# BG Directories
+alias bgweb="cd ~/Projects/Brightgauge/brightgauge-web; git pull; workon brightgauge; cd web"
+alias bgfdws="cd ~/Projects/Brightgauge/brightgauge-fdws"
+alias bgcore="cd ~/Projects/Brightgauge/brightgauge-core"
+alias bgtasks="cd ~/Projects/Brightgauge/brightgauge-tasks"
 
 source $ZSH/oh-my-zsh.sh
 

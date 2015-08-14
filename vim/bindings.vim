@@ -88,7 +88,7 @@ noremap L $
 vnoremap L g_
 
 " search and replace word under cursor
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+nnoremap <leader>r :%s/\<<C-r><C-w>\>/
 
 " Hit jj to exit insert mode
 imap jj <Esc>
@@ -128,6 +128,9 @@ map <leader>x :e ~/buffer.md<cr>
  
 " Toggle paste
 set pastetoggle=<F4>
+
+" Open buffer in chrome
+nnoremap <F4> :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
 
 
 

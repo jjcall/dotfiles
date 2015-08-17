@@ -8,6 +8,7 @@ brew upgrade
 brew install ack
 brew install autojump
 brew install ctags
+brew install cmake
 brew install tmux
 brew install curl
 brew install git
@@ -106,3 +107,10 @@ for name in *; do
     fi
   fi
 done
+
+
+echo Lets change some of the OSX defaults to make things a little snappier.
+
+sh ~/.osx
+
+echo Thats a wrap

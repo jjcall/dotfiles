@@ -41,7 +41,6 @@ brew install brew-cask
 
 # Core Functionality
 echo Install Core Apps
-brew cask install alfred
 brew cask install adobe-creative-cloud
 brew cask install appcleaner
 brew cask install dropbox
@@ -60,7 +59,6 @@ brew cask install chromecast
 # Nice to have
 echo Install Some additional Apps
 brew cask install firefox
-brew cask install marked
 brew cask install transmission
 brew cask install skype
 brew cask install spotify

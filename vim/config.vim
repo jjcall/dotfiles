@@ -63,7 +63,7 @@ endtry
 " Set extra options when running in GUI mode
 if has("gui_running")
   set t_Co=256
-  set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h18
+  set guifont=Fira\ Mono\ for\ Powerline:h18
   set guioptions=egmrt
   set ttimeoutlen=10
   augroup FastEscape
@@ -75,7 +75,7 @@ if has("gui_running")
 endif
 set encoding=utf8
 set ffs=unix,dos,mac
-set gfn=Bitstream\ Vera\ Sans\ Mono\ 18 " Fonts
+set gfn=Fira\ Mono\ for\ Powerline\ 18
 
 "-------------------------------------------------------------
 " Files, backups and undo

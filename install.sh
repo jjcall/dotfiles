@@ -1,6 +1,3 @@
-#!/bin/sh
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 echo Install Homebrew, Postgres, wget and cask
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
@@ -36,35 +33,7 @@ brew install zsh-completions
 # JS Stuff
 npm install -g jshint
 
-brew tap phinze/cask
-brew install brew-cask
 
-# Core Functionality
-echo Install Core Apps
-brew cask install adobe-creative-cloud
-brew cask install appcleaner
-brew cask install dropbox
-brew cask install vlc
-brew cask install java
-
-# Development
-echo Install Dev Apps
-brew cask install sequel-pro
-
-# Google Slavery
-echo Install Google Apps | Chrome not included cause of 1Password Plugin
-brew cask install google-drive
-brew cask install chromecast
-
-# Nice to have
-echo Install Some additional Apps
-brew cask install firefox
-brew cask install transmission
-brew cask install skype
-brew cask install spotify
-brew cask install spotify-notifications
-
-# cleanup
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
 

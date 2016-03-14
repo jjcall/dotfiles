@@ -22,6 +22,7 @@ set nostartofline     " Dont jump to start of line after commands
 set scrolloff=5       " Keep three lines below everything
 set shortmess+=A      " Always edit file, even whe swap is present
 set modifiable
+set ttyfast
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -57,7 +58,7 @@ set visualbell t_vb=
 "-------------------------------------------------------------
 syntax enable 
 try
-  colorscheme jellybeans
+  colorscheme Tomorrrow-Night
 catch
 endtry
 " Set extra options when running in GUI mode

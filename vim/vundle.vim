@@ -14,6 +14,7 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 
@@ -28,7 +29,6 @@ Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'haya14busa/incsearch.vim'
-Plugin 'majutsushi/tagbar'
 
 "-------------------------------------
 " Commands 

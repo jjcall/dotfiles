@@ -18,7 +18,6 @@ brew update
 brew upgrade
 brew install ack
 brew install autojump
-brew install caskroom/cask/brew-cask
 brew install ctags
 brew install cmake
 brew install tmux
@@ -35,7 +34,6 @@ brew install python
 brew install readline
 brew install rbenv
 brew install ruby-build
-brew install rbenv-gem-rehash
 brew install rbenv-default-gems
 brew install reattach-to-user-namespace
 brew install redis
@@ -45,13 +43,14 @@ brew install wget --with-iri --with-debug
 brew install zsh-completions
 
 # Cask Install
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql suspicious-package
 
 # JS Stuff
 npm install -g jshint
 npm install -g gulp
 npm install -g node-inspector
-npm install -g phantom phantomjs
+npm install -g phantom
+npm install -g phantomjs
 npm install -g coffee-script
 npm install -g bower
 

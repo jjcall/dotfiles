@@ -1,9 +1,24 @@
+# - Start to Install xCode (download 4 Gb)
+# - Setup languages
+#   - max key repeat speed
+#   - Short delay before repeat
+# - Shortcuts
+# - Other items in settings
+# - Run xCode
+# - Setup time machine
+# - Install homebrew and all from brew
+
 echo Install Homebrew, Postgres, wget and cask
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Command line tools
+xcode-select --install
+
 brew update
 brew upgrade
 brew install ack
 brew install autojump
+brew install caskroom/cask/brew-cask
 brew install ctags
 brew install cmake
 brew install tmux
@@ -13,7 +28,6 @@ brew install htop
 brew install hub
 brew install imagemagick --with-webp
 brew install lua
-brew install macvim --HEAD --with-lua
 brew install mongo
 brew install node
 brew install postgresql
@@ -30,17 +44,26 @@ brew install vim
 brew install wget --with-iri --with-debug
 brew install zsh-completions
 
+# Cask Install
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
+
 # JS Stuff
 npm install -g jshint
+npm install -g gulp
+npm install -g node-inspector
+npm install -g phantom phantomjs
+npm install -g coffee-script
+npm install -g bower
 
+# iOS
+sudo gem install cocoapods
+pod setup
 
 brew cleanup --force
 rm -f -r /Library/Caches/Homebrew/*
 
 echo "Security: https://objective-see.com/products.html"
-
 echo Now lets install some dotfiles
-
 cutstring="DO NOT EDIT BELOW THIS LINE"
 
 for name in *; do
@@ -75,9 +98,10 @@ for name in *; do
   fi
 done
 
+echo Time to set your hostname
+sudo scutil --set HostName eazymac
 
 echo Lets change some of the OSX defaults to make things a little snappier.
-
 sh ~/.osx
 
 echo Thats a wrap

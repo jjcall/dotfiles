@@ -16,11 +16,6 @@ imap <F1> <Esc>
 " Pinky issues
 cnoremap w' w<CR>
 
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
-  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,
-  \.git,node_modules,_site,*.class,*.zip,*.aux
-
 " Open a vertical/horizontal split, switch over to it
 nnoremap <leader>s <C-w>s<C-w>j
 nnoremap <leader>v <C-w>v<C-w>l
@@ -57,12 +52,6 @@ noremap L $
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
-
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 if has("mac") || has("macunix")
   nmap <D-j> <M-j>
@@ -108,9 +97,6 @@ map <leader>s? z=
 "-------------------------------------------------------------
 " Misc commands
 "-------------------------------------------------------------
-"" Underline the current line with '='
-nmap <silent> <leader>ul :t.\|s/./-/g\|:nohls<cr>
-
 " format the entire file
 nmap <leader>fef ggVG=
 
@@ -128,9 +114,3 @@ map <leader>x :e ~/buffer.md<cr>
  
 " Toggle paste
 set pastetoggle=<F4>
-
-" Open buffer in chrome
-nnoremap <F4> :exe ':silent !open -a /Applications/Google\ Chrome.app %'<CR>
-
-
-

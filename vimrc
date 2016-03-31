@@ -17,5 +17,3 @@ source ~/.vim/bindings.vim
 
 " Plugin configs
 source ~/.vim/plugin_configs.vim
-
-

@@ -25,12 +25,9 @@ set modifiable
 set ttyfast
 
 " Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-  set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-else
-  set wildignore+=.git\*,.hg\*,.svn\*
-endif
+set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
+  \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc,
+  \.git,node_modules,_site,*.class,*.zip,*.aux,*/.DS_Store
 
 "-------------------------------------------------------------
 " VIM user interface
@@ -98,13 +95,6 @@ set smarttab
 set expandtab
 set nowrap
 
-"-------------------------------------------------------------
-" Visual mode related
-"-------------------------------------------------------------
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
-vnoremap <silent> * :call VisualSelection('f')<CR>
-vnoremap <silent> # :call VisualSelection('b')<CR>
 
 "-------------------------------------------------------------
 " Status line
@@ -120,27 +110,6 @@ function! CmdLine(str)
   emenu Foo.Bar
   unmenu Foo
 endfunction 
-
-function! VisualSelection(direction, extra_filter) range
-  let l:saved_reg = @"
-  execute "normal! vgvy"
-
-  let l:pattern = escape(@", '\\/.*$^~[]')
-  let l:pattern = substitute(l:pattern, "\n$", "", "")
-
-  if a:direction == 'b'
-    execute "normal ?" . l:pattern . "^M"
-  elseif a:direction == 'gv'
-    call CmdLine("Ack \"" . l:pattern . "\" " )
-  elseif a:direction == 'replace'
-    call CmdLine("%s" . '/'. l:pattern . '/')
-  elseif a:direction == 'f'
-    execute "normal /" . l:pattern . "^M"
-  endif
-
-  let @/ = l:pattern
-  let @" = l:saved_reg
-endfunction
 
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -196,15 +165,5 @@ if has("autocmd")
   autocmd FileType javascript setlocal omnifunc=tern#Complete
   autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
   autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-  " Python related tab settings
-  autocmd FileType python set sw=4
-  autocmd FileType python set ts=4
-  autocmd FileType python set sts=4
-
-  augroup reload_vimrc
-      autocmd!
-      autocmd bufwritepost $MYVIMRC nested source $MYVIMRC 
-  augroup END
 endif

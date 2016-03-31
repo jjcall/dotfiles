@@ -12,10 +12,6 @@ Plugin 'gmarik/Vundle.vim'
 "-------------------------------------
 Plugin 'ajh17/Spacegray.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'chriskempson/base16-vim'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 
 "-------------------------------------
@@ -24,9 +20,6 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/unite.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'ervandew/supertab'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'haya14busa/incsearch.vim'
 
@@ -44,7 +37,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Valloric/YouCompleteMe'
 
 "-------------------------------------
 " Languages 
@@ -64,14 +56,8 @@ Plugin 'gregsexton/MatchTag'
 " JS
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'marijnh/tern_for_vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'wavded/vim-stylus'
 Plugin 'juvenn/mustache.vim'
-
-" Python
-Plugin 'django.vim'
 
 call vundle#end()
 filetype plugin indent on

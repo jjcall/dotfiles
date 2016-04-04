@@ -22,6 +22,11 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Shougo/unite.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'haya14busa/incsearch.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
+Plugin 'Valloric/YouCompleteMe'
 
 "-------------------------------------
 " Commands 
@@ -54,10 +59,14 @@ Plugin 'indenthtml.vim'
 Plugin 'gregsexton/MatchTag'
 
 " JS
-Plugin 'jelera/vim-javascript-syntax'
+Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'juvenn/mustache.vim'
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-markdown'
+Plugin 'Slava/tern-meteor'
 
 call vundle#end()
 filetype plugin indent on

@@ -8,7 +8,6 @@ vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 map <Leader>a :Ack!<space>
 map <Leader>h :nohlsearch<CR>
 
-
 "-------------------------------------------------------------
 " NERDTree
 "-------------------------------------------------------------
@@ -24,6 +23,21 @@ let g:NERDTreeShowBookmarks=1
 let g:NERDTreeChDirMode=2
 let g:NERDTreeMinimalUI=1
 
+"-------------------------------------------------------------
+" YCM 
+"-------------------------------------------------------------
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"-------------------------------------------------------------
+" UltiSnips
+"-------------------------------------------------------------
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 "-------------------------------------------------------------
 " Lightline
@@ -75,7 +89,6 @@ function! LightLineFilename()
        \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
        \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
 endfunction
-
 
 "-------------------------------------------------------------
 " Syntastic

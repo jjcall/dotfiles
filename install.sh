@@ -9,10 +9,6 @@
 # - Install homebrew and all from brew
 
 echo Install Homebrew, Postgres, wget and cask
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Command line tools
-xcode-select --install
 
 brew update
 brew upgrade
@@ -41,9 +37,6 @@ brew install sqlite
 brew install vim
 brew install wget --with-iri --with-debug
 brew install zsh-completions
-
-# Cask Install
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql suspicious-package
 
 # JS Stuff
 npm install -g jshint
@@ -100,7 +93,7 @@ done
 echo Time to set your hostname
 sudo scutil --set HostName eazymac
 
-echo Lets change some of the OSX defaults to make things a little snappier.
-sh ~/.osx
+# echo Lets change some of the OSX defaults to make things a little snappier.
+# sh ~/.osx
 
 echo Thats a wrap

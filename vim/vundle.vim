@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 " UI
 "-------------------------------------
 Plugin 'ajh17/Spacegray.vim'
+Plugin 'crusoexia/vim-dracula'
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
 

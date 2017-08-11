@@ -13,11 +13,11 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git git-extras rvm brew)
 
 # Custom aliases
+alias vim="mvim -v"
 alias e="vim" # open vim
 alias cdp="cd ~/Projects" #cd into Projects
 alias cde="cd ~/Projects/EazyO" #cd into Projects
 alias ss='source ~/.zshrc'
-alias powit="rvm env . -- --env > .powenv" #adds powenv and points to rvm ruby and gems
 alias bower='noglob bower'
 alias tmux="TERM=xterm-256color tmux"
 

@@ -16,13 +16,21 @@ set wildmenu          " Turn on wild menu
 set hidden            " Change buffer without saving
 set clipboard+=unnamed    " Yanks go on clipboard instead
 set timeoutlen=350    " Time to wait for a command
-set foldlevelstart=99 " Remove folds
 set iskeyword+=$,@    " Add extra chars that are valid variable parts
 set nostartofline     " Dont jump to start of line after commands
 set scrolloff=5       " Keep three lines below everything
 set shortmess+=A      " Always edit file, even whe swap is present
 set modifiable
 set ttyfast
+
+" Folding
+if has('folding')
+  if has ('windows')
+    let &fillchars='vert: '
+  endif
+  set foldmethod=indent
+  set foldlevelstart=99
+endif
 
 " Ignore compiled files
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
@@ -53,15 +61,16 @@ set visualbell t_vb=
 "-------------------------------------------------------------
 " Colors and Fonts
 "-------------------------------------------------------------
-syntax enable 
+syntax on
 try
-  colorscheme Tomorrrow-Night
+  colorscheme dracula
 catch
 endtry
 " Set extra options when running in GUI mode
 if has("gui_running")
   set t_Co=256
-  set guifont=Fira\ Mono\ for\ Powerline:h18
+  set macligatures
+  set guifont=Fira\ Code:h18
   set guioptions=egmrt
   set ttimeoutlen=10
   augroup FastEscape
@@ -74,6 +83,7 @@ endif
 set encoding=utf8
 set ffs=unix,dos,mac
 set gfn=Fira\ Mono\ for\ Powerline\ 18
+set gfn=Fira\ Code:h18
 
 "-------------------------------------------------------------
 " Files, backups and undo

@@ -3,7 +3,8 @@
 " --------------------------------------------------------------
 " " Hide toolbar in MacVim
 if has('gui_running')
-  set guifont=Fira\ Mono\ for\ Powerline:h16
+  set macligatures
+  set guifont=Fira\ Code:h18
   set guioptions=egmrt
   set ttimeoutlen=10
   augroup FastEscape

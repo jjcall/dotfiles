@@ -28,6 +28,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rizzatti/dash.vim'
 
 "-------------------------------------
 " Commands 

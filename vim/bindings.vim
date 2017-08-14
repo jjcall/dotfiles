@@ -111,6 +111,9 @@ map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
 map <leader>x :e ~/buffer.md<cr>
+
+" Folding
+nnoremap <s-tab> za
  
 " Toggle paste
 set pastetoggle=<F4>

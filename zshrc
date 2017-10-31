@@ -17,6 +17,7 @@ alias vim="mvim -v"
 alias e="vim" # open vim
 alias cdp="cd ~/Projects" #cd into Projects
 alias cde="cd ~/Projects/EazyO" #cd into Projects
+alias cdb="cd ~/Projects/Build" #cd into Projects
 alias ss='source ~/.zshrc'
 alias bower='noglob bower'
 alias tmux="TERM=xterm-256color tmux"

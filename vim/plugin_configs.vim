@@ -11,7 +11,7 @@ map <Leader>h :nohlsearch<CR>
 "-------------------------------------------------------------
 " NERDTree
 "-------------------------------------------------------------
-nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <leader>2 :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$' ]
 let NERDTreeHighlightCursorline=1

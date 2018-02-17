@@ -95,6 +95,20 @@ map <leader>sa zg
 map <leader>s? z=
 
 "-------------------------------------------------------------
+" Auto Paste Mode 
+"-------------------------------------------------------------
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+
+"-------------------------------------------------------------
 " Misc commands
 "-------------------------------------------------------------
 " format the entire file
@@ -114,6 +128,3 @@ map <leader>x :e ~/buffer.md<cr>
 
 " Folding
 nnoremap <s-tab> za
- 
-" Toggle paste
-set pastetoggle=<F4>

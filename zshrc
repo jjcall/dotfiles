@@ -16,6 +16,7 @@ plugins=(git git-extras rvm brew)
 alias vim="mvim -v"
 alias e="vim" # open vim
 alias cdp="cd ~/Projects" #cd into Projects
+alias cda="cd ~/Projects/App\ Theory" #cd into Projects
 alias cde="cd ~/Projects/EazyO" #cd into Projects
 alias cdb="cd ~/Projects/Build" #cd into Projects
 alias ss='source ~/.zshrc'
@@ -36,3 +37,11 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
 # Rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+bs(){
+  echo
+  echo "browser-sync start --server --directory --files \"**\""
+  echo "http://www.browsersync.io/docs/command-line/"
+  echo
+  browser-sync start --server --directory --files "**"
+}

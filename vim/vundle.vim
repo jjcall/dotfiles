@@ -40,13 +40,13 @@ Plugin 'tpope/vim-fugitive'
 " Helpers
 "-------------------------------------
 Plugin 'Raimondi/delimitMate'
-Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'w0rp/ale'
 
 "-------------------------------------
-" Languages 
+" Syntax 
 "-------------------------------------
 " Ruby
 Plugin 'vim-ruby/vim-ruby'
@@ -65,10 +65,11 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'juvenn/mustache.vim'
-Plugin 'elzr/vim-json'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-markdown'
 Plugin 'Slava/tern-meteor'
+Plugin 'mxw/vim-jsx'
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 filetype plugin indent on

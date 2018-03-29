@@ -20,7 +20,6 @@ Plugin 'itchyny/lightline.vim'
 "-------------------------------------
 Plugin 'mileszs/ack.vim'
 Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/unite.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'haya14busa/incsearch.vim'
 Plugin 'sjl/gundo.vim'
@@ -29,6 +28,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rizzatti/dash.vim'
+Plugin 'metakirby5/codi.vim'
 
 "-------------------------------------
 " Commands 

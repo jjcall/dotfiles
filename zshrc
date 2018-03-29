@@ -45,3 +45,5 @@ bs(){
   echo
   browser-sync start --server --directory --files "**"
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

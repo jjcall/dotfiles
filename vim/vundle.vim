@@ -14,6 +14,7 @@ Plugin 'ajh17/Spacegray.vim'
 Plugin 'crusoexia/vim-dracula'
 Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
+Plugin 'trevordmiller/nova-vim'
 
 "-------------------------------------
 " Utils
@@ -29,6 +30,7 @@ Plugin 'ervandew/supertab'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rizzatti/dash.vim'
 Plugin 'metakirby5/codi.vim'
+Plugin 'sheerun/vim-polyglot'
 
 "-------------------------------------
 " Commands 

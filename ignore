@@ -1,0 +1,15 @@
+# GENERAL
+.git/
+.DS_Store
+
+# JAVASCRIPT
+node_modules/
+flow-typed/
+.next/
+package-lock.json
+yarn.lock
+
+# RUBY
+public/
+vendor/
+Gemfile.lock

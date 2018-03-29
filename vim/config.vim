@@ -63,7 +63,7 @@ set visualbell t_vb=
 "-------------------------------------------------------------
 syntax on
 try
-  colorscheme dracula
+  colorscheme nova
 catch
 endtry
 " Set extra options when running in GUI mode

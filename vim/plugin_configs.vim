@@ -111,4 +111,41 @@ let g:syntastic_check_on_wq = 0
 " FZF
 " ------------------------------------------------------------
 set rtp+=/usr/local/opt/fzf
+let $FZF_DEFAULT_COMMAND = 'ag --path-to-ignore ~/.ignore --hidden -g ""'
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, '--path-to-ignore ~/.ignore --hidden', <bang>0)
 
+" ------------------------------------------------------------
+" VIM-POLYGLOT 
+" ------------------------------------------------------------
+let g:javascript_plugin_flow = 1
+
+" ------------------------------------------------------------
+" ALE 
+" ------------------------------------------------------------
+let g:ale_echo_msg_format = '[%linter%] %s'
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+let g:ale_linters = {
+\  'sh': ['shell'],
+\  'typescript': ['tsserver', 'typecheck', 'tslint'],
+\  'javascript': ['flow', 'eslint'],
+\}
+let g:ale_fixers = {
+\  'sh': ['shfmt'],
+\  'typescript': ['tslint', 'prettier'],
+\  'javascript': ['eslint', 'prettier'],
+\  'json': ['prettier'],
+\  'markdown': ['prettier'],
+\  'css': ['prettier'],
+\}
+let g:ale_pattern_options = {
+\  'repos/edgar': {
+\    'ale_fixers': {
+\      'sh': [],
+\      'javascript': ['eslint'],
+\      'json': [],
+\      'markdown': [],
+\      'css': [],
+\    },
+\  },
+\}

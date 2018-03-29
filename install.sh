@@ -20,9 +20,7 @@ brew install tmux
 brew install curl
 brew install git
 brew install htop
-brew install hub
 brew install imagemagick --with-webp
-brew install lua
 brew install mongo
 brew install node
 brew install postgresql
@@ -35,17 +33,12 @@ brew install reattach-to-user-namespace
 brew install redis
 brew install sqlite
 brew install vim
+brew install neovim
 brew install wget --with-iri --with-debug
 brew install zsh-completions
 
 # JS Stuff
 npm install -g jshint
-npm install -g gulp
-npm install -g node-inspector
-npm install -g phantom
-npm install -g phantomjs
-npm install -g coffee-script
-npm install -g bower
 
 # iOS
 sudo gem install cocoapods

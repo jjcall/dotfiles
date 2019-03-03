@@ -1,0 +1,9 @@
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "caskroom/cask"
+tap "caskroom/drivers"
+
+brew "mas"
+brew "htop"
+brew "postgresql"
+brew "tmux"

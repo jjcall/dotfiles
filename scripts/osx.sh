@@ -70,3 +70,21 @@ else
     echo_item "Skipping Neovim install" red
   fi
 fi
+
+# -- Brew Apps----------------------------------------------------------------------
+if exists "rbenv"; then
+  if get_boolean_response "Do you want to install Homebrew applications?"; then
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Brewfile
+  else
+    echo_item "Skipping installing Homebrew apps" red
+  fi
+fi
+
+# -- Cask Apps----------------------------------------------------------------------
+if exists "rbenv"; then
+  if get_boolean_response "Do you want to install Cask applications?"; then
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Caskfile
+  else
+    echo_item "Skipping installing Cask apps" red
+  fi
+fi

@@ -72,7 +72,7 @@ else
 fi
 
 # -- Brew Apps----------------------------------------------------------------------
-if exists "rbenv"; then
+if exists "brew"; then
   if get_boolean_response "Do you want to install Homebrew applications?"; then
     brew bundle --file=/Users/jjcall/.dotfiles/install/Brewfile
   else
@@ -80,11 +80,28 @@ if exists "rbenv"; then
   fi
 fi
 
+echo ""
+
+
 # -- Cask Apps----------------------------------------------------------------------
-if exists "rbenv"; then
+if exists "brew cask"; then
   if get_boolean_response "Do you want to install Cask applications?"; then
     brew bundle --file=/Users/jjcall/.dotfiles/install/Caskfile
   else
     echo_item "Skipping installing Cask apps" red
   fi
 fi
+
+echo ""
+
+
+# -- Mas Apps----------------------------------------------------------------------
+if exists "mas"; then
+  if get_boolean_response "Do you want to install App Store applications?"; then
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Masfile
+  else
+    echo_item "Skipping installing App Store apps" red
+  fi
+fi
+
+echo ""

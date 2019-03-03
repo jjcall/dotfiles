@@ -2,8 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "caskroom/cask"
 tap "caskroom/drivers"
+tap "mas-cli/tap"
+tap-pin "mas-cli/tap"
 
-brew "mas"
 brew "htop"
-brew "postgresql"
+brew "mas"
 brew "tmux"
+brew "postgresql", restart_service: true

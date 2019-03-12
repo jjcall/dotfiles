@@ -3,45 +3,45 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
-cask install 1password
-cask install adobe-creative-cloud
-cask install alfred
-cask install cleanmymac
-cask install dash
-cask install dropbox
-cask install droplr
-cask install figma
-cask install forklift
-cask install google-backup-and-sync
-cask install google-chrome
-cask install google-chrome-canary
-cask install google-earth-pro
-cask install imagealpha
-cask install imageoptim
-cask install plex-media-player
-cask install plex-media-server
-cask install rightfont
-cask install screenflow
-cask install sketch
-cask install skype
-cask install slack
-cask install sonos
-cask install spectacle
-cask install spectrum
-cask install spotify
-cask install suspicious-package
-cask install textexpander
-cask install virtualbox
-cask install visual-studio-code
-cask install webpquicklook
-cask install zeplin
+cask "1password"
+cask "adobe-creative-cloud"
+cask "alfred"
+cask "cleanmymac"
+cask "dash"
+cask "dropbox"
+cask "droplr"
+cask "figma"
+cask "forklift"
+cask "google-backup-and-sync"
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "google-earth-pro"
+cask "imagealpha"
+cask "imageoptim"
+cask "iterm2"
+cask "plex-media-player"
+cask "plex-media-server"
+cask "rightfont"
+cask "screenflow"
+cask "sketch"
+cask "skype"
+cask "slack"
+cask "sonos"
+cask "spectacle"
+cask "spectrum"
+cask "spotify"
+cask "suspicious-package"
+cask "textexpander"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "webpquicklook"
+cask "zeplin"
 
 # Quicklook Plugins
-cask install qlcolorcode
-cask install qlimagesize
-cask install qlmarkdown
-cask install qlprettypatch
-cask install qlstephen
-cask install quicklook-csv
-cask install quicklook-json
-
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask "qlstephen"
+cask "quicklook-csv"
+cask "quicklook-json"

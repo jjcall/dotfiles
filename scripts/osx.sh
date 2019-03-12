@@ -84,7 +84,7 @@ echo ""
 
 
 # -- Cask Apps----------------------------------------------------------------------
-if exists "brew cask"; then
+if exists "brew"; then
   if get_boolean_response "Do you want to install Cask applications?"; then
     brew bundle --file=/Users/jjcall/.dotfiles/install/Caskfile
   else

@@ -60,7 +60,7 @@ set spellfile=$HOME/.vim-spell-en.utf-7.add
 set hlsearch
 
 " Powerline Font Stuff
-set guifont=Hack\ Nerd\ Font\ 16
+set guifont=Fira\ Code:h16
 
 " Make it obvious where 120 characters is
 " Lifted from StackOverflow user Jeremy W. Sherman
@@ -146,11 +146,8 @@ let g:user_emmet_settings = {
 " -------------------------------
 " Section. Theme
 " -------------------------------
-syntax enable
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set termguicolors
-set background=dark
-colorscheme nova
+syntax on
+colorscheme onedark
 
 " -------------------------------
 " Section. Local Machine Config

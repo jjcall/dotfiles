@@ -1,9 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "caskroom/cask"
-tap "caskroom/drivers"
-tap "mas-cli/tap"
-tap-pin "mas-cli/tap"
 
 brew "htop"
 brew "mas"

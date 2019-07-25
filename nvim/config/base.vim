@@ -147,7 +147,8 @@ let g:user_emmet_settings = {
 " Section. Theme
 " -------------------------------
 syntax on
-colorscheme onedark
+set termguicolors
+colorscheme dracula
 
 " -------------------------------
 " Section. Local Machine Config

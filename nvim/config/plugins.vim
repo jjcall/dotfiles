@@ -5,6 +5,7 @@ call plug#begin()
 
 " UI
 Plug 'trevordmiller/nova-vim'
+Plug 'dracula/vim'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'            " Handy info
 Plug 'retorillo/airline-tablemode.vim'

@@ -1,5 +1,3 @@
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # -- Dotfiles Directory --------------------------------------------------------
 export XDG_CONFIG_HOME="$HOME/.config"
 export DOTFILES="$HOME/.dotfiles"
@@ -109,14 +107,6 @@ if [[ -f "$HOME/.xsh" ]]; then
   source $HOME/.xsh
 fi
 
-# -- fzf -----------------------------------------------------------------------
-set rtp+=/usr/local/opt/fzf
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-bindkey '^[[A' fzf-history-widget
-bindkey '^P' up-line-or-history
-bindkey '^N' down-line-or-history
-
-
 # -- asdf ---------------------------------------------------------------------
 if [[ -d "$HOME/.asdf" ]]; then
   source $HOME/.asdf/asdf.sh
@@ -137,3 +127,6 @@ fi
 
 # -- Start Starship ---------------------------------------
 eval "$(starship init zsh)"
+
+# -- Add syntax highlighting to terminal ---------------------------------------
+source $HOME/.dotfiles/.zsh/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

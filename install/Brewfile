@@ -1,6 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "homebrew/cask"
+tap "homebre/cask"
 
 brew "htop"
 brew "mas"

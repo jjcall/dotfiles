@@ -13,7 +13,6 @@ if [[ -f "$DOTFILES/zsh/zshrc.local.pre" ]]; then
 fi
 
 # -- Zsh -----------------------------------------------------------------------
-ZSH="$HOME/.oh-my-zsh"
 ZSH_CUSTOM="$DOTFILES/zsh/custom"
 fpath=( "$DOTFILES/zsh/custom" $fpath)
 
@@ -32,9 +31,6 @@ local brew_completions="$(brew --prefix)/share/zsh/site-functions"
 if [[ -d $brew_completions ]]; then
   fpath=($fpath $brew_completions)
 fi
-
-# -- Oh My Zsh -----------------------------------------------------------------
-source $ZSH/oh-my-zsh.sh
 
 # -- Named Directories ---------------------------------------------------------
 unsetopt auto_name_dirs

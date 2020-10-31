@@ -33,19 +33,6 @@ if exists "zsh"; then
     ln -sf $HOME/.dotfiles/zsh/zshrc $HOME/.zshrc
     echo_item "Linked zshrc" "green"
 
-    # -- OH MY ZSH
-    if [ -d $HOME/.oh-my-zsh/ ]; then
-      echo_item "Oh my ZSH is already installed" "green"
-    else
-      if exists "curl"; then
-        curl -L http://install.ohmyz.sh | sh
-      elif exists "wget"; then
-        wget --no-check-certificate http://install.ohmyz.sh -O - | sh
-      else
-        echo_item "You need either curl or wget installed to download Oh My ZSH"
-      fi
-    fi
-
   else
     echo_item "Ignoring ZSH configuration" "red"
   fi

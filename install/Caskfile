@@ -20,7 +20,6 @@ cask "skype"
 cask "slack"
 cask "sonos"
 cask "spectrum"
-cask "textexpander"
 cask "visual-studio-code"
 
 # Fonts

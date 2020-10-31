@@ -4,6 +4,4 @@ tap "caskroom/cask"
 
 brew "htop"
 brew "mas"
-brew "tmux"
 brew "fzf"
-brew "postgresql", restart_service: true

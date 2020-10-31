@@ -1,0 +1,43 @@
+{
+  "entries": {
+    "mas": {
+      "Flow": {
+        "id": "1423210932",
+        "version": "2.0.3"
+      },
+      "Bear": {
+        "id": "1091189122",
+        "version": "1.7.21"
+      },
+      "ColorSnapper2": {
+        "id": "969418666",
+        "version": "1.5.1"
+      },
+      "Keynote": {
+        "id": "409183694",
+        "version": "10.2"
+      },
+      "Numbers": {
+        "id": "409203825",
+        "version": "10.2"
+      },
+      "The Unarchiver": {
+        "id": "425424353",
+        "version": "4.2.2"
+      },
+      "Canary": null
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "2.5.7",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "ccd3d900e2d5833e7a74adc9f7bc837e51d6f637",
+        "CLT": "12.1.0.0.1.1602137645",
+        "Xcode": "12.1",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}

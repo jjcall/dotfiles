@@ -1,6 +1,6 @@
 [user]
-  editor = /usr/local/bin/nvim
-  email = jason@astroid.me
+  editor = /usr/local/bin/code
+  email = jasoncalleiro@gmail.com
   name = Jason Calleiro
 
 [alias]

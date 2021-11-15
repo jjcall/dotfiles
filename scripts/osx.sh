@@ -21,7 +21,7 @@ if exists "npm"; then
   echo_item "npm is already installed" green
 else
   if get_boolean_response "Do you want to install npm?"; then
-    brew install node
+	brew install node
   else
     echo_item "Skipping npm install" red
   fi
@@ -32,7 +32,7 @@ echo ""
 # -- Brew Apps----------------------------------------------------------------------
 if exists "brew"; then
   if get_boolean_response "Do you want to install Homebrew applications?"; then
-    brew bundle --file=/Users/jasoncalleiro/.dotfiles/install/Brewfile
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Brewfile
   else
     echo_item "Skipping installing Homebrew apps" red
   fi
@@ -44,7 +44,7 @@ echo ""
 # -- Cask Apps----------------------------------------------------------------------
 if exists "brew"; then
   if get_boolean_response "Do you want to install Cask applications?"; then
-    brew bundle --file=/Users/jasoncalleiro/.dotfiles/install/Caskfile
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Caskfile
   else
     echo_item "Skipping installing Cask apps" red
   fi
@@ -56,7 +56,7 @@ echo ""
 # -- Mas Apps----------------------------------------------------------------------
 if exists "mas"; then
   if get_boolean_response "Do you want to install App Store applications?"; then
-    brew bundle --file=/Users/jasoncalleiro/.dotfiles/install/Masfile
+    brew bundle --file=/Users/jjcall/.dotfiles/install/Masfile
   else
     echo_item "Skipping installing App Store apps" red
   fi

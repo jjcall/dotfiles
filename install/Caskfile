@@ -5,18 +5,13 @@ tap "homebrew/cask-versions"
 
 cask "adobe-creative-cloud"
 cask "alfred"
-cask "cleanmymac"
 cask "figma"
 cask "google-chrome-canary"
 cask "google-chrome"
-cask "imagealpha"
 cask "imageoptim"
-cask "iterm2"
 cask "notion"
-cask "sketch"
 cask "slack"
 cask "sonos"
-cask "rectangle"
 cask "visual-studio-code"
 
 # Fonts

@@ -1,0 +1,152 @@
+{
+  "entries": {
+    "tap": {
+      "homebrew/cask": {
+        "revision": "cb9b561d60896653e00759fd95d6677941f62220"
+      },
+      "homebrew/cask-drivers": {
+        "revision": "f446464086492bbff85f47fd72519c19027f4f45"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "ddb3f3e306c9d733c1367b8277b26948c28c9f0e"
+      },
+      "homebrew/cask-versions": {
+        "revision": "8435bd4ae5877c1a26cb8fa5bdcb80be182ebc16"
+      }
+    },
+    "cask": {
+      "adobe-creative-cloud": {
+        "version": "5.9.0.373",
+        "options": {
+          "full_name": "adobe-creative-cloud"
+        }
+      },
+      "raycast": {
+        "version": "1.50.0",
+        "options": {
+          "full_name": "raycast"
+        }
+      },
+      "figma": {
+        "version": "116.8.5",
+        "options": {
+          "full_name": "figma"
+        }
+      },
+      "google-chrome-canary": {
+        "version": "115.0.5737.0",
+        "options": {
+          "full_name": "google-chrome-canary"
+        }
+      },
+      "google-chrome": {
+        "version": "112.0.5615.137",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "notion": {
+        "version": "2.1.15",
+        "options": {
+          "full_name": "notion"
+        }
+      },
+      "slack": {
+        "version": "4.31.156",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "sonos": {
+        "version": "15.3,72.2.40060",
+        "options": {
+          "full_name": "sonos"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.77.3",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "spline": {
+        "version": "0.9.0",
+        "options": {
+          "full_name": "spline"
+        }
+      },
+      "rive": {
+        "version": "0.8.303",
+        "options": {
+          "full_name": "rive"
+        }
+      },
+      "framer": {
+        "version": "2023.15.1",
+        "options": {
+          "full_name": "framer"
+        }
+      },
+      "cron": {
+        "version": "1.112.0",
+        "options": {
+          "full_name": "cron"
+        }
+      },
+      "font-hack": {
+        "version": "3.003",
+        "options": {
+          "full_name": "font-hack"
+        }
+      },
+      "font-fira-code": {
+        "version": "6.2",
+        "options": {
+          "full_name": "font-fira-code"
+        }
+      },
+      "warp": {
+        "version": "0.2023.04.25.08.05.stable_00",
+        "options": {
+          "full_name": "warp"
+        }
+      },
+      "arc": {
+        "version": "0.101.2,38549",
+        "options": {
+          "full_name": "arc"
+        }
+      },
+      "superhuman": {
+        "version": "21.0.32",
+        "options": {
+          "full_name": "superhuman"
+        }
+      },
+      "discord": {
+        "version": "0.0.275",
+        "options": {
+          "full_name": "discord"
+        }
+      },
+      "whatsapp": {
+        "version": "2.2317.10",
+        "options": {
+          "full_name": "whatsapp"
+        }
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.15",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.0.0.1.1679647830",
+        "Xcode": "14.3",
+        "macOS": "13.3.1"
+      }
+    }
+  }
+}

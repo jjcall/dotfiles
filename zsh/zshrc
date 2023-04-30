@@ -129,9 +129,3 @@ fi
 
 # -- Start Starship ---------------------------------------
 eval "$(starship init zsh)"
-
-# -- Add syntax highlighting to terminal ---------------------------------------
-source $HOME/.dotfiles/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-
-# -- Auto Suggestions ---------------------------------------
-source $HOME/.dotfiles/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

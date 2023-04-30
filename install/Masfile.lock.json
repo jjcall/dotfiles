@@ -23,9 +23,26 @@
       },
       "The Unarchiver": {
         "id": "425424353",
-        "version": "4.2.2"
+        "version": "4.3.5"
       },
-      "Canary": null
+      "Canary": null,
+      "Endel": {
+        "id": "1346247457",
+        "version": "4.27.7"
+      },
+      "Friendly Streaming Browser": null,
+      "Telegram": {
+        "id": "747648890",
+        "version": "9.6.1"
+      },
+      "Todoist": {
+        "id": "585829637",
+        "version": "8.1.2"
+      },
+      "1Password for Safari": {
+        "id": "1569813296",
+        "version": "2.10.0"
+      }
     }
   },
   "system": {
@@ -37,6 +54,14 @@
         "CLT": "12.1.0.0.1.1602137645",
         "Xcode": "12.1",
         "macOS": "10.15.7"
+      },
+      "ventura": {
+        "HOMEBREW_VERSION": "4.0.15",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "14.3.0.0.1.1679647830",
+        "Xcode": "14.3",
+        "macOS": "13.3.1"
       }
     }
   }

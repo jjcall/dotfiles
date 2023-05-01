@@ -21,6 +21,7 @@ cask "arc"
 cask "superhuman"
 cask "discord"
 cask "whatsapp"
+cask "cleanshot"
 
 # Fonts
 cask "font-hack"

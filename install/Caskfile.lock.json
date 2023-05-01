@@ -5,13 +5,13 @@
         "revision": "cb9b561d60896653e00759fd95d6677941f62220"
       },
       "homebrew/cask-drivers": {
-        "revision": "f446464086492bbff85f47fd72519c19027f4f45"
+        "revision": "6960ad3c1e6267e5b6671d54b479bb723621a704"
       },
       "homebrew/cask-fonts": {
-        "revision": "ddb3f3e306c9d733c1367b8277b26948c28c9f0e"
+        "revision": "516018032c03e9ae1f8c3e57604c5592fe2a6104"
       },
       "homebrew/cask-versions": {
-        "revision": "8435bd4ae5877c1a26cb8fa5bdcb80be182ebc16"
+        "revision": "8fd651fe7a2f63aa1c5f12fd71360c8af6e159de"
       }
     },
     "cask": {
@@ -34,7 +34,7 @@
         }
       },
       "google-chrome-canary": {
-        "version": "115.0.5737.0",
+        "version": "115.0.5743.0",
         "options": {
           "full_name": "google-chrome-canary"
         }
@@ -52,7 +52,7 @@
         }
       },
       "slack": {
-        "version": "4.31.156",
+        "version": "4.32.122",
         "options": {
           "full_name": "slack"
         }
@@ -88,7 +88,7 @@
         }
       },
       "cron": {
-        "version": "1.112.0",
+        "version": "1.113.0",
         "options": {
           "full_name": "cron"
         }
@@ -130,9 +130,21 @@
         }
       },
       "whatsapp": {
-        "version": "2.2317.10",
+        "version": "2.2318.11",
         "options": {
           "full_name": "whatsapp"
+        }
+      },
+      "cleanshot": {
+        "version": "4.5",
+        "options": {
+          "full_name": "cleanshot"
+        }
+      },
+      "tradingview": {
+        "version": "2.3.3",
+        "options": {
+          "full_name": "tradingview"
         }
       }
     }
@@ -140,7 +152,7 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.15",
+        "HOMEBREW_VERSION": "4.0.16",
         "HOMEBREW_PREFIX": "/usr/local",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",

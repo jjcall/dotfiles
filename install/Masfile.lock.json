@@ -28,12 +28,12 @@
       "Canary": null,
       "Endel": {
         "id": "1346247457",
-        "version": "4.27.7"
+        "version": "4.29.2"
       },
       "Friendly Streaming Browser": null,
       "Telegram": {
         "id": "747648890",
-        "version": "9.6.1"
+        "version": "9.6.2"
       },
       "Todoist": {
         "id": "585829637",
@@ -42,7 +42,8 @@
       "1Password for Safari": {
         "id": "1569813296",
         "version": "2.10.0"
-      }
+      },
+      "Hiddenbar": null
     }
   },
   "system": {
@@ -56,8 +57,8 @@
         "macOS": "10.15.7"
       },
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.15",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.0.18",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",
         "Xcode": "14.3",

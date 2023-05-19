@@ -122,6 +122,8 @@ if [[ -d "$yarn_global_modules/.bin" && ":$PATH:" != *":$yarn_global_modules/.bi
   export PATH="$PATH:$yarn_global_modules/.bin"
 fi
 
+eval "$(pyenv init --path)"
+
 # -- Local Configuration (After Default) ---------------------------------------
 if [[ -f "$DOTFILES/zsh/zshrc.local" ]]; then
   source $DOTFILES/zsh/zshrc.local

@@ -1,8 +1,7 @@
 tap "homebrew/bundle"
-tap "homebrew/core"
-tap "homebrew/cask"
 
 brew "htop"
 brew "mas"
 brew "fzf"
 brew "starship"
+brew "dockutil"

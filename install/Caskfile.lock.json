@@ -2,16 +2,16 @@
   "entries": {
     "tap": {
       "homebrew/cask": {
-        "revision": "cb9b561d60896653e00759fd95d6677941f62220"
+        "revision": "666a093821801e84aea43617d1789aa4f5ca7224"
       },
       "homebrew/cask-drivers": {
-        "revision": "6960ad3c1e6267e5b6671d54b479bb723621a704"
+        "revision": "aded9481aad24feabc70abd24485f7d07e6d4cab"
       },
       "homebrew/cask-fonts": {
-        "revision": "516018032c03e9ae1f8c3e57604c5592fe2a6104"
+        "revision": "3bbe4e7139ed910e75029bf0fa31c44291d5a0ea"
       },
       "homebrew/cask-versions": {
-        "revision": "8fd651fe7a2f63aa1c5f12fd71360c8af6e159de"
+        "revision": "9e37844d5e239eeb3cfbf08fe02c4edfe7455bec"
       }
     },
     "cask": {
@@ -22,25 +22,25 @@
         }
       },
       "raycast": {
-        "version": "1.50.0",
+        "version": "1.51.3",
         "options": {
           "full_name": "raycast"
         }
       },
       "figma": {
-        "version": "116.8.5",
+        "version": "116.9.5",
         "options": {
           "full_name": "figma"
         }
       },
       "google-chrome-canary": {
-        "version": "115.0.5743.0",
+        "version": "115.0.5773.4",
         "options": {
           "full_name": "google-chrome-canary"
         }
       },
       "google-chrome": {
-        "version": "112.0.5615.137",
+        "version": "113.0.5672.126",
         "options": {
           "full_name": "google-chrome"
         }
@@ -64,7 +64,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.77.3",
+        "version": "1.78.2",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -76,7 +76,7 @@
         }
       },
       "rive": {
-        "version": "0.8.303",
+        "version": "0.8.349",
         "options": {
           "full_name": "rive"
         }
@@ -106,19 +106,19 @@
         }
       },
       "warp": {
-        "version": "0.2023.04.25.08.05.stable_00",
+        "version": "0.2023.05.09.08.03.stable_01",
         "options": {
           "full_name": "warp"
         }
       },
       "arc": {
-        "version": "0.101.2,38549",
+        "version": "0.103.1,38943",
         "options": {
           "full_name": "arc"
         }
       },
       "superhuman": {
-        "version": "21.0.32",
+        "version": "21.0.38",
         "options": {
           "full_name": "superhuman"
         }
@@ -130,7 +130,7 @@
         }
       },
       "whatsapp": {
-        "version": "2.2318.11",
+        "version": "2.2319.9",
         "options": {
           "full_name": "whatsapp"
         }
@@ -142,9 +142,21 @@
         }
       },
       "tradingview": {
-        "version": "2.3.3",
+        "version": "2.3.4",
         "options": {
           "full_name": "tradingview"
+        }
+      },
+      "dropbox": {
+        "version": "173.4.6706",
+        "options": {
+          "full_name": "dropbox"
+        }
+      },
+      "1password": {
+        "version": "8.10.6",
+        "options": {
+          "full_name": "1password"
         }
       }
     }
@@ -152,8 +164,8 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.16",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.0.18",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",
         "Xcode": "14.3",

@@ -24,6 +24,16 @@ fi
 
 echo ""
 
+# -- MAC Cleanup ---------------------------------------------------------------
+
+if get_boolean_response "Do you want to cleanup your dock?"; then
+  brew dockutil --all
+else
+  echo_item "Ignoring dock cleanup" red
+fi
+
+echo ""
+
 # -- ZSH Setup -----------------------------------------------------------------
 
 if exists "zsh"; then

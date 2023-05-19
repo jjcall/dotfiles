@@ -2,13 +2,13 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "6b01bd338af95db59f1d6db87ebf6416d7518297"
+        "revision": "ab014794c2dc14b1179de68f960479d898c5bc22"
       },
       "homebrew/core": {
-        "revision": "cd2f827afa5b61a8c41666c326641db467377b43"
+        "revision": "e8ddab0b50b53270ea9597bd6bf76e5519cf0be3"
       },
       "homebrew/cask": {
-        "revision": "cb9b561d60896653e00759fd95d6677941f62220"
+        "revision": "666a093821801e84aea43617d1789aa4f5ca7224"
       }
     },
     "brew": {
@@ -187,6 +187,20 @@
             }
           }
         }
+      },
+      "dockutil": {
+        "version": "2.0.5",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/dockutil/blobs/sha256:f5f87d9e286c2b294bb157ac9f87baa2720fff044c7a92c0b80b9cb82db8a87e",
+              "sha256": "f5f87d9e286c2b294bb157ac9f87baa2720fff044c7a92c0b80b9cb82db8a87e"
+            }
+          }
+        }
       }
     }
   },
@@ -201,8 +215,8 @@
         "macOS": "10.15.7"
       },
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.16",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.0.18",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",
         "Xcode": "14.3",

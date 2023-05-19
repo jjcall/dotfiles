@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
 cask "adobe-creative-cloud"
+cask "1password"
 cask "raycast"
 cask "figma"
 cask "google-chrome-canary"
@@ -24,6 +25,7 @@ cask "whatsapp"
 cask "cleanshot"
 cask "tradingview"
 cask "dropbox"
+cask "loom"
 
 # Fonts
 cask "font-hack"
